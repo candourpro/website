@@ -1,8 +1,14 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import './index.css'
-import App from './App'
+import { CandourProvider } from 'candour'
+import './theme/index.css'
+import App from './components/App'
 import registerServiceWorker from './registerServiceWorker'
+import candourTheme from './theme/candour'
 
-ReactDOM.render(<App />, document.getElementById('root'))
+ReactDOM.render(
+  <CandourProvider value={candourTheme}>
+    <App />
+  </CandourProvider>
+, document.getElementById('root'))
 registerServiceWorker()

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200px" height="200px" viewBox="0 0 200 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.1 (57501) - http://www.bohemiancoding.com/sketch -->
+    <title>Artboard</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle" fill="#333333" x="0" y="0" width="200" height="200" rx="20"></rect>
+        <path d="M143.25,250 L143.25,-50" id="Line" stroke="#FFFFFF" stroke-width="15" opacity="0.5" style="mix-blend-mode: soft-light;" stroke-linecap="square"></path>
+        <path d="M58.25,250 L58.25,-50" id="Line" stroke="#FFFFFF" stroke-width="15" opacity="0.5" style="mix-blend-mode: soft-light;" stroke-linecap="square"></path>
+        <path d="M-44.5,46.5 L226.5,46.5" id="Line" stroke="#FFFFFF" stroke-width="15" opacity="0.5" style="mix-blend-mode: soft-light;" stroke-linecap="square"></path>
+        <path d="M-44.5,158.5 L226.5,158.5" id="Line" stroke="#FFFFFF" stroke-width="15" opacity="0.5" style="mix-blend-mode: soft-light;" stroke-linecap="square"></path>
+        <text id="C" opacity="0.9" font-family="SFUIText-Medium, SF UI Text" font-size="170" font-weight="400" letter-spacing="0.0737847239" fill="#FFFFFF">
+            <tspan x="39" y="162">C</tspan>
+        </text>
+    </g>
+</svg>
