@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="830px" height="1030px" viewBox="0 0 830 1030" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 7</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-7" transform="translate(515.000000, 515.500000) scale(-1, 1) translate(-515.000000, -515.500000) translate(15.000000, 15.000000)">
+            <path d="M500,801 C665.685425,801 800,666.685425 800,501 C800,335.314575 665.685425,201 500,201 L500,1.13686838e-13 C776.142375,0 1000,223.857625 1000,500 C1000,776.142375 776.142375,1000 500,1000 L500,801 Z" id="Combined-Shape" stroke="#FFFFFF" stroke-width="30" fill="#0D51FF"></path>
+            <path d="M0,1 C276.142375,1 500,224.857625 500,501 C500,777.142375 276.142375,1001 0,1001 L0,1 Z" id="Combined-Shape" transform="translate(250.000000, 501.000000) scale(-1, 1) translate(-250.000000, -501.000000) "></path>
+            <path d="M200,200 C365.685425,200 500,334.314575 500,500 C500,665.685425 365.685425,800 200,800 L200,200 Z" id="Combined-Shape" stroke="#FFFFFF" stroke-width="30" fill="#0D51FF" transform="translate(350.000000, 500.000000) scale(-1, 1) translate(-350.000000, -500.000000) "></path>
+        </g>
+    </g>
+</svg>
