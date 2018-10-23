@@ -23,7 +23,7 @@ export default () => (
     <Heading fontWeight700 paddingTop={2}>
       Candour
     </Heading>
-    <Heading level={2} fontWeight200>
+    <Heading level={2} fontWeight300>
       React design system to build faster
     </Heading>
   </Container>
