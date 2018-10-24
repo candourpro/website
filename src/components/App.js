@@ -1,16 +1,23 @@
 import React from 'react'
 import { Container } from 'candour'
-import Header from './Header'
-import Splash from './Splash'
-import Motivation from '../docs/introduction.md'
-import step from '@candour/step'
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Redirect,
+} from 'react-router-dom'
+
+import Landing from './Landing'
+import Docs from './Docs'
 
 export default () => (
   <Container>
-    <Header />
-    <Splash />
-    <Container>
-      <Motivation />
-    </Container>
+    <Router>
+      <Switch>
+        <Route exact path='/' component={Landing} />
+        <Route exact path='/docs/:slug' component={Docs} />
+        <Redirect exact from='/docs' to='/docs/introduction' />
+      </Switch>
+    </Router>
   </Container>
 )

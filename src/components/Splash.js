@@ -1,14 +1,9 @@
 import React from 'react'
-import _ from 'lodash'
 import {
   Container,
   Heading,
   Text,
-  Button,
 } from 'candour'
-import step from '@candour/step'
-
-import Blocks from './Blocks'
 import colors from '../theme/colors'
 
 export default () => (
@@ -22,7 +17,7 @@ export default () => (
     <Heading>
       Candour
     </Heading>
-    <Text level={2}>
+    <Text level={3}>
       React design system to build faster
     </Text>
   </Container>

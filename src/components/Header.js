@@ -3,10 +3,10 @@ import {
   Container,
   Text,
 } from 'candour'
-import step from '@candour/step'
-import fluid from '@candour/fluid'
+import {
+  Link,
+} from 'react-router-dom'
 import colors from '../theme/colors'
-import { ReactComponent as Logo } from '../assets/logo.svg'
 
 export default () => (
   <Container
@@ -16,18 +16,16 @@ export default () => (
     padding={2}
     paddingTop={1.5}
     paddingBottom={1.5}
-    backgroundColor='#fff'
-    color='#000'
     fontWeight700
   >
-    <Container displayFlex alignItemsCenter>
+    <Container component={Link} to='/' displayFlex alignItemsCenter>
       <Container height width backgroundColor={colors.black} />
       <Text marginLeft>
         Candour
       </Text>
     </Container>
     <Container displayFlex>
-      <Text marginLeft={3}>
+      <Text component={Link} to='/docs/introduction' marginLeft={3}>
         Docs
       </Text>
       <Text marginLeft={3}>
