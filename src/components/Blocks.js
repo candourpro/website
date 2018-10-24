@@ -4,7 +4,7 @@ import Block from './Block'
 import colors from '../theme/colors'
 
 export default () => (
-  <Container displayFlex fontWeight900 alignItemsCenter color={colors.peach}>
+  <Container displayFlex fontWeight900 alignItemsCenter color={colors.white}>
     <Block />
     <Container paddingRight>
       +

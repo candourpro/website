@@ -21,8 +21,8 @@ export default () => (
     fontWeight700
   >
     <Container displayFlex alignItemsCenter>
-      <Logo height={step(2)} width='inherit' />
-      <Text marginLeft color={colors.blue}>
+      <Container height width backgroundColor={colors.black} />
+      <Text marginLeft>
         Candour
       </Text>
     </Container>

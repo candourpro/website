@@ -14,17 +14,16 @@ import colors from '../theme/colors'
 export default () => (
   <Container
     padding={2}
-    paddingTop={6}
+    paddingTop={5}
     paddingBottom={6}
-    backgroundColor={colors.blue}
+    backgroundColor={colors.black}
     color={colors.white}
   >
-    <Blocks />
-    <Heading fontWeight700 paddingTop={2}>
+    <Heading>
       Candour
     </Heading>
-    <Heading level={2} fontWeight300>
+    <Text level={2}>
       React design system to build faster
-    </Heading>
+    </Text>
   </Container>
 )

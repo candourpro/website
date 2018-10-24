@@ -2,7 +2,7 @@ import React from 'react'
 import { Container } from 'candour'
 import Header from './Header'
 import Splash from './Splash'
-import Motivation from '../docs/motivation.md'
+import Motivation from '../docs/introduction.md'
 import step from '@candour/step'
 
 export default () => (
