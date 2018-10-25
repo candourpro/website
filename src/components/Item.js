@@ -5,6 +5,10 @@ import { Link } from 'react-router-dom'
 import Items from './Items'
 import colors from '../theme/colors'
 
+const to = (slug, items) => (
+  items.length ? `/docs/${items[0].slug}` : `/docs/${slug}`
+)
+
 export default ({
   slug,
   currentSlug,
@@ -14,9 +18,10 @@ export default ({
   <>
     <Text
       component={Link}
-      to={`/docs/${slug}`}
+      to={to(slug, items)}
       color={currentSlug === slug ? colors.blue : 'inherit'}
       displayBlock
+      paddingTop
       paddingBottom
       fontWeight700
     >
