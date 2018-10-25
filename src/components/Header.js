@@ -13,9 +13,7 @@ export default () => (
     displayFlex
     justifyContentSpaceBetween
     alignItemsCenter
-    padding={2}
-    paddingTop={1.5}
-    paddingBottom={1.5}
+    padding
     fontWeight700
   >
     <Container component={Link} to='/' displayFlex alignItemsCenter>

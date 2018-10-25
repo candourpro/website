@@ -57,10 +57,10 @@ export default ({
     <Container>
       <Header />
       <Container borderTop={borders.gray} displayFlex>
-        <Container padding={2} borderRight={borders.gray} minWidth={8} minHeight='100vh'>
+        <Container padding borderRight={borders.gray} minWidth={8} minHeight='100vh'>
           <Items items={items} currentSlug={slug} />
         </Container>
-        <Container padding={2}>
+        <Container padding>
           <CurrentComponent />
         </Container>
       </Container>

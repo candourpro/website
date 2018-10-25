@@ -21,8 +21,7 @@ export default ({
       to={to(slug, items)}
       color={currentSlug === slug ? colors.blue : 'inherit'}
       displayBlock
-      paddingTop
-      paddingBottom
+      marginBottom={1.5}
       fontWeight700
     >
       {name}
