@@ -8,7 +8,7 @@ import {
 } from 'react-router-dom'
 
 import Landing from './Landing'
-import Docs from './Docs'
+import Docs from './Docs/index'
 
 export default () => (
   <Container>

@@ -3,7 +3,7 @@ import { Text, Container } from 'candour'
 import { Link } from 'react-router-dom'
 
 import Items from './Items'
-import colors from '../theme/colors'
+import colors from '../../../theme/colors'
 
 const to = (slug, items) => (
   items.length ? `/docs/${items[0].slug}` : `/docs/${slug}`
@@ -11,15 +11,18 @@ const to = (slug, items) => (
 
 export default ({
   slug,
-  currentSlug,
   name,
   items = [],
+  match: {
+    params,
+  },
+  match,
 }) => (
   <>
     <Text
       component={Link}
       to={to(slug, items)}
-      color={currentSlug === slug ? colors.blue : 'inherit'}
+      color={params[0] === slug ? colors.blue : 'inherit'}
       displayBlock
       marginBottom={1.5}
       fontWeight700
@@ -28,7 +31,7 @@ export default ({
     </Text>
 
     {!!items.length && <Container paddingLeft>
-      <Items items={items} currentSlug={currentSlug} />
+      <Items items={items} match={match} />
     </Container>}
   </>
 )
