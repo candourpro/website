@@ -1,4 +1,4 @@
-### Setup custom theme
+# Setup custom theme
 
 For the theming to work, you need to set up a `CandourProvider`. Here’s an example for Create React App:
 

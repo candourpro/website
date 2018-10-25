@@ -2,6 +2,7 @@ import React from 'react'
 import {
   Heading,
   Text,
+  Code,
 } from 'candour'
 
 const heading = level => props => <Heading level={level} {...props} />
@@ -14,4 +15,5 @@ export default {
   h5: heading(5),
   h6: heading(6),
   text: Text,
+  code: Code,
 }

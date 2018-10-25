@@ -9,7 +9,7 @@ export default (props) => {
   const CurrentComponent = currentComponent(props)
 
   return (
-    <Container padding paddingLeft={2}>
+    <Container padding paddingLeft={2} paddingRight={2} width='100%'>
       <CandourProvider value={candourMdxTheme}>
         <CurrentComponent components={components} />
       </CandourProvider>
