@@ -1,4 +1,4 @@
-### Heading
+# Heading
 
 `Heading` is a special component that builds on a `Container` (inherits all the CSS properties) but also is defined in a theme (at `theme.heading`).
 

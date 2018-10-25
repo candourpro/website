@@ -1,6 +1,4 @@
-## Components
-
-### Container
+# Container
 
 Container is a primitive component on which every other component builds upon. You can also use it in places where you’d otherwise use `div` or a `span` HTML tag.
 

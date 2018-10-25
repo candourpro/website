@@ -3,6 +3,7 @@ import { CandourProvider, Container } from 'candour'
 
 import candourMdxTheme from '../../../theme/candourMdx'
 import Pagination from './Pagination/index'
+import GitHubMeta from './GitHubMeta/index'
 
 import current from './lib/current'
 import components from './lib/components'
@@ -15,6 +16,7 @@ export default (props) => {
       <CandourProvider value={candourMdxTheme}>
         <CurrentComponent components={components} />
         <Pagination {...props} />
+        <GitHubMeta {...props} />
       </CandourProvider>
     </Container>
   )
