@@ -7,5 +7,5 @@ export default ({
     params,
   },
 }) => (
-  _.find(flatten(docs), { slug: params[0] }).component
+  _.find(flatten(docs), { slug: params[0] })
 )

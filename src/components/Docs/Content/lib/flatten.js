@@ -7,5 +7,5 @@ export default (docs) => {
     result.push(doc.items)
   ))
 
-  return _.compact(_.flatten(result))
+  return _.filter(_.compact(_.flatten(result)), 'component')
 }

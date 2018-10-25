@@ -1,6 +1,8 @@
 import Introduction from './introduction.md'
 import GettingStartedInstall from './getting-started/install.md'
 import GettingStartedCustomTheme from './getting-started/custom-theme.md'
+import ComponentsContainer from './components/container.md'
+import ComponentsHeading from './components/heading.md'
 
 export default [
   {
@@ -21,6 +23,22 @@ export default [
         name: 'Custom theme',
         slug: 'getting-started/custom-theme',
         component: GettingStartedCustomTheme,
+      },
+    ],
+  },
+  {
+    name: 'Components',
+    slug: 'components',
+    items: [
+      {
+        name: 'Container',
+        slug: 'components/container',
+        component: ComponentsContainer,
+      },
+      {
+        name: 'Heading',
+        slug: 'components/heading',
+        component: ComponentsHeading,
       },
     ],
   },
