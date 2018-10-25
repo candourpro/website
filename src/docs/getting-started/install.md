@@ -1,6 +1,4 @@
-## Getting started
-
-### Install
+# Install
 
 To install the framework:
 ```sh
