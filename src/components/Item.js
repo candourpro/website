@@ -7,7 +7,7 @@ import colors from '../theme/colors'
 
 export default ({
   slug,
-  isActive,
+  currentSlug,
   name,
   items = [],
 }) => (
@@ -15,7 +15,7 @@ export default ({
     <Text
       component={Link}
       to={`/docs/${slug}`}
-      color={isActive ? colors.blue : 'inherit'}
+      color={currentSlug === slug ? colors.blue : 'inherit'}
       displayBlock
       paddingBottom
       fontWeight700
@@ -24,7 +24,7 @@ export default ({
     </Text>
 
     {!!items.length && <Container paddingLeft>
-      <Items items={items} />
+      <Items items={items} currentSlug={currentSlug} />
     </Container>}
   </>
 )

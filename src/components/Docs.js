@@ -23,33 +23,42 @@ const items = [
     items: [
       {
         name: 'Install',
-        slug: 'install',
+        slug: 'getting-started/install',
         component: GettingStartedInstall,
       },
       {
         name: 'Custom theme',
-        slug: 'custom-theme',
+        slug: 'getting-started/custom-theme',
         component: GettingStartedCustomTheme,
       },
     ],
   },
 ]
 
+const flatItems = (items) => {
+  const result = _.cloneDeep(items)
+
+  _.each(items, (item) => (
+    result.push(item.items)
+  ))
+
+  return _.compact(_.flatten(result))
+}
+
 export default ({
   match: {
-    params: {
-      slug,
-    },
+    params,
   },
 }) => {
-  const CurrentComponent = _.find(items, { slug }).component
+  const slug = params[0]
+  const CurrentComponent = _.find(flatItems(items), { slug }).component
 
   return (
     <Container>
       <Header />
       <Container borderTop={borders.gray} displayFlex>
         <Container padding={2} borderRight={borders.gray} minWidth={8} minHeight='100vh'>
-          <Items items={items} slug={slug} />
+          <Items items={items} currentSlug={slug} />
         </Container>
         <Container padding={2}>
           <CurrentComponent />
