@@ -20,16 +20,22 @@ const code = props => {
   )
 }
 
+const inlineCode = props => (
+  <Code display='inline' padding={0} paddingLeft={0.25} paddingRight={0.25} {...props} />
+)
+
 const table = props => <Container component='table' {...props} />
-const th = props => <Text
-  component='th'
-  padding
-  textAlignLeft
-  borderBottom={borders.light}
-  fontWeight600
-  level={5}
-  {...props}
-/>
+const th = props => (
+  <Text
+    component='th'
+    padding
+    textAlignLeft
+    borderBottom={borders.light}
+    fontWeight600
+    level={5}
+    {...props}
+  />
+)
 
 const td = props => <Container
   component='td'
@@ -47,6 +53,7 @@ export default {
   h6: heading(6),
   p: Text,
   code,
+  inlineCode,
   table,
   td,
   th,
