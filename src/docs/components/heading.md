@@ -5,7 +5,12 @@
 It has special `level` prop that defines which HTML component and style to use.
 
  ```jsx
-<Heading level={2}>
-  I am a h2 heading
-</Heading>
+import { render } from 'react-dom'
+import { Heading } from 'candour'
+
+render(
+  <Heading level={3}>
+    I'm an H3 heading
+  </Heading>
+)
 ```

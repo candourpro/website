@@ -2,7 +2,7 @@
 
 For the theming to work, you need to set up a `CandourProvider`. Here’s an example for Create React App:
 
-```javascript
+```jsx
 import React from 'react'
 import { render } from 'react-dom'
 import { CandourProvider } from 'candour'
@@ -18,7 +18,7 @@ const candourTheme = {
 render(
   <CandourProvider value={candourTheme}>
     <Heading level={2}>
-      This is your heading
+      I'm a custom heading
     </Heading>
   </CandourProvider>,
   document.getElementById('root')

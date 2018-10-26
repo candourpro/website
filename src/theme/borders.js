@@ -1,5 +1,5 @@
 import colors from './colors'
 
 export default {
-  gray: `1px solid ${colors.superLightBlue}`,
+  light: `1px solid ${colors.superLightBlue}`,
 }

@@ -9,7 +9,7 @@ import Sandbox from '../Sandbox'
 
 const heading = level => props => <Heading level={level} {...props} />
 const code = props => {
-  if (!props.className === 'language-jsx') return <Code {...props} />
+  if (props.className !== 'language-jsx') return <Code {...props} />
 
   return (
     <Container>

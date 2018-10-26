@@ -7,7 +7,8 @@ import { render } from 'react-dom'
 import { Container } from 'candour'
 
 render(
-  <Container backgroundColor=‘tomato’>
+  <Container backgroundColor='black' color='white' padding>
+    I'm a container
   </Container>
 )
 ```

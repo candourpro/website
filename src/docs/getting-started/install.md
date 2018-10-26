@@ -1,8 +1,8 @@
 # Install
 
-To install the framework:
-```sh
+To install the library:
+```
 yarn add candour
 # or
-npm install candour —save
+npm install candour --save
 ```

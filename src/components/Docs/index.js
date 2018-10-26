@@ -11,7 +11,7 @@ import Content from './Content/index'
 export default (props) => (
   <Container>
     <Header />
-    <Container borderTop={borders.gray} displayFlex>
+    <Container borderTop={borders.light} displayFlex>
       <Menu {...props} />
       <Content {...props} />
     </Container>

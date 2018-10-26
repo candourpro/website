@@ -1,4 +1,5 @@
 import React from 'react'
+import _ from 'lodash'
 import { transform } from '@babel/core'
 import babelPresetReact from '@babel/preset-react'
 import {
@@ -9,28 +10,50 @@ import {
   CandourProvider,
   defaultTheme,
 } from 'candour'
-import colors from '../../../theme/colors'
+import borders from '../../../theme/borders'
+
+const sandboxer = function () {
+  return {
+    visitor: {
+      Program(path, state) {
+        const imports = _.filter(path.get('body'), (p) => p.isImportDeclaration())
+        _.each(imports, (i) => i.remove())
+      },
+      Identifier(path) {
+        if (path.node.name !== 'render') return
+
+        path.node.name = 'return render'
+      },
+    }
+  }
+}
 
 export default props => {
-  console.log(props)
+  const { code, ast } = transform(props.children, {
+    presets: [
+      babelPresetReact,
+    ],
+    plugins: [
+      sandboxer,
+    ],
+    ast: true
+  })
 
-  const result = transform(props.children, {
-    presets: [babelPresetReact],
-  }).code
+  const render = (result) => result
 
-  console.log(result)
-  window.React = React
-  window.Heading = Heading
-
-  // const Comp = eval(result)
+  const inputs = {
+    React,
+    CandourProvider,
+    Heading,
+    Container,
+    render,
+  }
+  const codeFunction = new Function(..._.keys(inputs), code)(..._.values(inputs))
 
   return (
-    <Container border={`2px solid ${colors.superLightBlue}`} padding>
+    <Container border={borders.light} padding>
       <CandourProvider>
-        <Heading level={2}>
-          AAA
-        </Heading>
-        {eval(result)}
+        {codeFunction}
       </CandourProvider>
     </Container>
   )

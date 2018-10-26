@@ -6,7 +6,7 @@ import borders from '../../../theme/borders'
 import Items from './Items'
 
 export default (props) => (
-  <Container padding borderRight={borders.gray} minWidth={8} minHeight='100vh'>
+  <Container padding borderRight={borders.light} minWidth={8} minHeight='100vh'>
     <Items items={docs} {...props} />
   </Container>
 )
