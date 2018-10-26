@@ -3,51 +3,53 @@ import _ from 'lodash'
 import { transform } from '@babel/core'
 import babelPresetReact from '@babel/preset-react'
 import {
+  CandourProvider,
   Container,
   Heading,
   Text,
+  Button,
+  Input,
   Code,
-  CandourProvider,
-  defaultTheme,
 } from 'candour'
 import borders from '../../../theme/borders'
 
-const sandboxer = function () {
-  return {
-    visitor: {
-      Program(path, state) {
-        const imports = _.filter(path.get('body'), (p) => p.isImportDeclaration())
-        _.each(imports, (i) => i.remove())
-      },
-      Identifier(path) {
-        if (path.node.name !== 'render') return
+const sandboxer = () => ({
+  visitor: {
+    Program(path, state) {
+      const imports = _.filter(path.get('body'), (p) => p.isImportDeclaration())
+      _.each(imports, (i) => i.remove())
+    },
+    Identifier(path) {
+      if (path.node.name !== 'render') return
 
-        path.node.name = 'return render'
-      },
-    }
-  }
-}
+      path.node.name = 'return render'
+    },
+  },
+})
 
 export default props => {
-  const { code, ast } = transform(props.children, {
+  const { code } = transform(props.children, {
     presets: [
       babelPresetReact,
     ],
     plugins: [
       sandboxer,
     ],
-    ast: true
   })
 
   const render = (result) => result
 
   const inputs = {
     React,
+    render,
     CandourProvider,
     Heading,
     Container,
-    render,
+    Text,
+    Code,
+    Button,
   }
+
   const codeFunction = new Function(..._.keys(inputs), code)(..._.values(inputs))
 
   return (

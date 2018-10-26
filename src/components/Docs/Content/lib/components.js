@@ -6,6 +6,7 @@ import {
   Code,
 } from 'candour'
 import Sandbox from '../Sandbox'
+import borders from '../../../../theme/borders'
 
 const heading = level => props => <Heading level={level} {...props} />
 const code = props => {
@@ -19,6 +20,24 @@ const code = props => {
   )
 }
 
+const table = props => <Container component='table' {...props} />
+const th = props => <Text
+  component='th'
+  padding
+  textAlignLeft
+  borderBottom={borders.light}
+  fontWeight600
+  level={5}
+  {...props}
+/>
+
+const td = props => <Container
+  component='td'
+  padding
+  borderBottom={borders.light}
+  {...props}
+/>
+
 export default {
   h1: heading(1),
   h2: heading(2),
@@ -26,6 +45,9 @@ export default {
   h4: heading(4),
   h5: heading(5),
   h6: heading(6),
-  text: Text,
+  p: Text,
   code,
+  table,
+  td,
+  th,
 }

@@ -9,16 +9,16 @@ import { CandourProvider } from 'candour'
 
 const candourTheme = {
   heading: {
-    2: {
-      padding: 3,
+    3: {
+      padding: 2,
     },
   },
 }
 
 render(
   <CandourProvider value={candourTheme}>
-    <Heading level={2}>
-      I'm a custom heading
+    <Heading level={3}>
+      I'm a themed heading
     </Heading>
   </CandourProvider>,
   document.getElementById('root')

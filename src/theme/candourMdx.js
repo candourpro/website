@@ -9,12 +9,16 @@ export default _.merge(
     heading: _.merge(
       levels('fontSize', [2, 1.75, 1.5, 1.25]),
       levels('fontWeight', [700]),
-      levels('paddingBottom', [0.5]),
+      levels('marginBottom', [0.5]),
+    ),
+    text: _.merge(
+      levels('marginBottom', [1]),
     ),
     code: {
       base: {
         width: '100%',
         boxSizing: 'border-box',
+        marginBottom: 2,
       },
     },
   },

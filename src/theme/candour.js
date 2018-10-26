@@ -1,8 +1,5 @@
 export default {
-  limited: {
-    maxWidth: '700px',
-  },
-  constrained: {
+  readable: {
     maxWidth: '768px',
   },
   roundCorners: {

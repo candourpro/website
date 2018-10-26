@@ -13,9 +13,11 @@ export default (props) => {
 
   return (
     <Container padding paddingLeft={2} paddingRight={2} width='100%'>
-      <CandourProvider value={candourMdxTheme}>
-        <CurrentComponent components={components} />
-      </CandourProvider>
+      <Container readable>
+        <CandourProvider value={candourMdxTheme}>
+          <CurrentComponent components={components} />
+        </CandourProvider>
+      </Container>
       <Pagination {...props} />
       <GitHubMeta {...props} />
     </Container>

@@ -39,4 +39,10 @@ a {
 
 pre {
   font-family: inherit;
+  white-space: inherit;
+  margin: 0;
+}
+
+th {
+  font-weight: inherit;
 }
