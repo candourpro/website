@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/preset-react": "^7.0.0",
     "@candour/fluid": "^1.0.9",
     "@candour/step": "^1.0.11",
     "@mdx-js/loader": "^0.15.5",

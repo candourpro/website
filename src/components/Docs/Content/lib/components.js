@@ -1,11 +1,23 @@
 import React from 'react'
 import {
+  Container,
   Heading,
   Text,
   Code,
 } from 'candour'
+import Sandbox from '../Sandbox'
 
 const heading = level => props => <Heading level={level} {...props} />
+const code = props => {
+  if (!props.className === 'language-jsx') return <Code {...props} />
+
+  return (
+    <Container>
+      <Sandbox {...props} />
+      <Code {...props} />
+    </Container>
+  )
+}
 
 export default {
   h1: heading(1),
@@ -15,5 +27,5 @@ export default {
   h5: heading(5),
   h6: heading(6),
   text: Text,
-  code: Code,
+  code,
 }

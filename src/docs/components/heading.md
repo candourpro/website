@@ -5,11 +5,7 @@
 It has special `level` prop that defines which HTML component and style to use.
 
  ```jsx
-import { Heading } from 'candour'
-
-render(
-  <Heading level={2}>
-    I am a h2 heading
-  </Heading>
-)
+<Heading level={2}>
+  I am a h2 heading
+</Heading>
 ```

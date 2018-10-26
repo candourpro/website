@@ -3,6 +3,7 @@
 Container is a primitive component on which every other component builds upon. You can also use it in places where you’d otherwise use `div` or a `span` HTML tag.
 
 ```jsx
+import { render } from 'react-dom'
 import { Container } from 'candour'
 
 render(
@@ -16,6 +17,7 @@ render(
 
 All the properties that a related to sizes can be specified in steps:
 ```jsx
+import { render } from 'react-dom'
 import { Container } from 'candour'
 
 render(
