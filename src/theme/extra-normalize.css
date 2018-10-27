@@ -13,6 +13,10 @@ input {
 
 button, [type="button"], [type="reset"], [type="submit"] {
   -webkit-appearance: initial;
+  border: 0;
+  padding: 0;
+  background: initial;
+  color: initial;
 }
 
 ul {
@@ -45,4 +49,14 @@ pre {
 
 th {
   font-weight: inherit;
+}
+
+strong {
+  font-weight: inherit;
+}
+
+hr {
+  margin: 0;
+  border: 0;
+  overflow: inherit;
 }

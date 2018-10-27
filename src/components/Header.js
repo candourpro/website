@@ -25,7 +25,7 @@ export default () => (
       </Text>
     </Container>
     <Container displayFlex>
-      <Text component={Link} to='/docs/introduction' marginLeft={3}>
+      <Text component={Link} to='/docs/overview/introduction' marginLeft={3}>
         Docs
       </Text>
       <Text marginLeft={3}>

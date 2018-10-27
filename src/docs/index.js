@@ -1,4 +1,5 @@
-import Introduction from './introduction.md'
+import OverviewIntroduction from './overview/introduction.md'
+import OverviewCoreOpinions from './overview/core-opinions.md'
 import GettingStartedInstall from './getting-started/install.md'
 import GettingStartedCustomTheme from './getting-started/custom-theme.md'
 import ComponentsContainer from './components/container.md'
@@ -6,9 +7,20 @@ import ComponentsHeading from './components/heading.md'
 
 export default [
   {
-    name: 'Introduction',
-    slug: 'introduction',
-    component: Introduction,
+    name: 'Overview',
+    slug: 'overview',
+    items: [
+      {
+        name: 'Introduction',
+        slug: 'overview/introduction',
+        component: OverviewIntroduction,
+      },
+      {
+        name: 'Core opinions',
+        slug: 'overview/core-opinionts',
+        component: OverviewCoreOpinions,
+      },
+    ],
   },
   {
     name: 'Getting started',

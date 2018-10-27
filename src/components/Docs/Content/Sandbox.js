@@ -48,6 +48,7 @@ export default props => {
     Text,
     Code,
     Button,
+    Input,
   }
 
   const codeFunction = new Function(..._.keys(inputs), code)(..._.values(inputs))

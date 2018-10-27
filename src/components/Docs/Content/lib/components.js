@@ -44,6 +44,18 @@ const td = props => <Container
   {...props}
 />
 
+const strong = props => <Text component='strong' fontWeight600 {...props} />
+const hr = props => <Container paddingBottom {...props} />
+const a = props => <Text component='a' textDecoration='underline' {...props} />
+const ul = props => <Container component='ul' marginTop={-1} {...props} />
+const li = props => (
+  <Container component='li' displayFlex>
+    <Text paddingRight={.5}>-</Text> <Text {...props} />
+  </Container>
+)
+
+const p = props => <Text marginBottom {...props} />
+
 export default {
   h1: heading(1),
   h2: heading(2),
@@ -51,10 +63,15 @@ export default {
   h4: heading(4),
   h5: heading(5),
   h6: heading(6),
-  p: Text,
+  p,
   code,
   inlineCode,
   table,
   td,
   th,
+  strong,
+  hr,
+  a,
+  ul,
+  li,
 }

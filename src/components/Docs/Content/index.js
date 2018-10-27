@@ -1,5 +1,5 @@
 import React from 'react'
-import { CandourProvider, Container } from 'candour'
+import { CandourProvider, Container, Text } from 'candour'
 
 import candourMdxTheme from '../../../theme/candourMdx'
 import Pagination from './Pagination/index'
@@ -13,11 +13,11 @@ export default (props) => {
 
   return (
     <Container padding paddingLeft={2} paddingRight={2} width='100%'>
-      <Container readable>
+      <Text readable>
         <CandourProvider value={candourMdxTheme}>
           <CurrentComponent components={components} />
         </CandourProvider>
-      </Container>
+      </Text>
       <Pagination {...props} />
       <GitHubMeta {...props} />
     </Container>

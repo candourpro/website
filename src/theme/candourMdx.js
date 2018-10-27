@@ -7,15 +7,10 @@ export default _.merge(
   _.cloneDeep(theme),
   {
     heading: {
-      ...levels('fontSize', [2, 1.75, 1.5, 1.25]),
+      ...levels('fontSize', [2, 1.5, 1.25, 1.10, 1]),
       base: {
         marginBottom: 0.5,
         fontWeight: 700,
-      },
-    },
-    text: {
-      base: {
-        marginBottom: 1,
       },
     },
     code: {
