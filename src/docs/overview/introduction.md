@@ -17,7 +17,7 @@ import { render } from 'react-dom'
 import { Container } from 'candour'
 
 render(
-  <Container backgroundColorBlack colorWhite padding={2}>
+  <Container backgroundColor='black' colorWhite padding={2}>
     Candour
   </Container>
 )

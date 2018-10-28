@@ -1,8 +1,8 @@
+import Candour from '../Candour'
+
 # Heading
 
-`Heading` is a built-in component that builds on a `Container`
-(inherits all the CSS properties) but also is defined in a theme
-(at `heading` key).
+`Heading` is a built-in component that builds on a `Container` component.
 
 It has special `level` prop that defines which HTML component and style to use.
 
@@ -19,12 +19,40 @@ render(
 
 ## Props
 
-`Heading` has some useful Candour-related props. The rest of the props are
+`Heading` has some useful <Candour />-related props. The rest of the props are
 passed to the underlying `component` (most likely `h1`, `h2`, `h3`, etc).
 
-| Prop          | Default       | Description |
-| ------------- | ------------- | ----- |
-| `level`       | `6`           | Values between `1-6` |
-| `component`   | `h${level}`   | Any HTML or React component (`div`, `p`, `Link`, etc) |
-| *camelCased CSS key*   |    | Example: `fontWeight={700}` |
-| *camelCased CSS key and camelCased value combination*   |    | Example: `<Container justifyContentSpaceBetween />` |
+| Prop                                                  | Default     | Description                                           |
+| -------------                                         | ----------- | -----                                                 |
+| `level`                                               | `1`         | Values between `1-6`                                  |
+| `component`                                           | `h${level}` | Any HTML or React component (`div`, `p`, `Link`, etc) |
+| *camelCased CSS key*                                  |             | Example: `fontWeight={700}`                           |
+| *camelCased CSS key and camelCased value combination* |             | Example: `<Heading alignTextCenter />`   |
+
+> **Note**
+
+> `Heading` is the only component from <Candour />, that has `level` default
+at `1`. This is because `h1` is more commonly used than `h6`.
+
+## Theming
+
+Base style of `Heading` is defined in theme at `heading` key. You can also
+define styles of `Heading` [levels](/docs/theme/levels) and
+additional `Heading`-specific [modifiers](/docs/theme/modifiers).
+
+
+```js
+{
+  heading: {
+    1: {
+      fontSize: 3,
+    },
+    5: {
+      fontSize: 2,
+    },
+    grey: {
+      color: 'grey',
+    },
+  },
+}
+```

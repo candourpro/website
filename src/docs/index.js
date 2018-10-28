@@ -1,6 +1,9 @@
 import OverviewIntroduction from './overview/introduction.md'
 import OverviewInlineStylesAndProps from './overview/inline-styles-and-props.md'
 import OverviewFluidDesignRhythmAndSteps from './overview/fluid-design-rhythm-and-steps.md'
+import StylePropsUsage from './style-props/usage.md'
+import StylePropsShorthand from './style-props/shorthand.md'
+import StylePropsList from './style-props/list.md'
 import ThemeBase from './theme/base.md'
 import ThemeModifiers from './theme/modifiers.md'
 import ThemeLevels from './theme/levels.md'
@@ -53,6 +56,27 @@ export default [
         name: 'Levels',
         slug: 'theme/levels',
         component: ThemeLevels,
+      },
+    ],
+  },
+  {
+    name: 'Style props',
+    slug: 'style-props',
+    items: [
+      {
+        name: 'Usage',
+        slug: 'style-props/usage',
+        component: StylePropsUsage,
+      },
+      {
+        name: 'Shorthand',
+        slug: 'style-props/shorthand',
+        component: StylePropsShorthand,
+      },
+      {
+        name: 'List',
+        slug: 'style-props/list',
+        component: StylePropsList,
       },
     ],
   },
