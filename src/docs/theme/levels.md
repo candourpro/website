@@ -1,3 +1,5 @@
+import Candour from '../Candour'
+
 # Levels
 
 Levels are what you are used to with HTML headings (`h1`, `h2`, etc.). Every
