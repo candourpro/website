@@ -1,5 +1,7 @@
 import OverviewIntroduction from './overview/introduction.md'
-import OverviewCoreOpinions from './overview/core-opinions.md'
+import OverviewInlineStylesAndModifiers from './overview/inline-styles-and-modifiers.md'
+import OverviewFluidDesignRhythmAndSteps from './overview/fluid-design-rhythm-and-steps.md'
+import OverviewTheming from './overview/theming.md'
 import GettingStartedInstall from './getting-started/install.md'
 import GettingStartedCustomTheme from './getting-started/custom-theme.md'
 import ComponentsContainer from './components/container.md'
@@ -16,9 +18,19 @@ export default [
         component: OverviewIntroduction,
       },
       {
-        name: 'Core opinions',
-        slug: 'overview/core-opinionts',
-        component: OverviewCoreOpinions,
+        name: 'Inline styles and modifiers',
+        slug: 'overview/inline-styles-and-modifiers',
+        component: OverviewInlineStylesAndModifiers,
+      },
+      {
+        name: 'Fluid design rhythm and steps',
+        slug: 'overview/fluid-design-rhythm-and-steps',
+        component: OverviewFluidDesignRhythmAndSteps,
+      },
+      {
+        name: 'Theming',
+        slug: 'overview/theming',
+        component: OverviewTheming,
       },
     ],
   },

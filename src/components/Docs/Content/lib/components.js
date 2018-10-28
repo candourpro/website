@@ -1,4 +1,6 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+import _ from 'lodash'
 import {
   Container,
   Heading,
@@ -46,8 +48,29 @@ const td = props => <Container
 
 const strong = props => <Text component='strong' fontWeight600 {...props} />
 const hr = props => <Container paddingBottom {...props} />
-const a = props => <Text component='a' textDecoration='underline' {...props} />
-const ul = props => <Container component='ul' marginTop={-1} {...props} />
+const a = ({ href, ...props }) => {
+  if (_.startsWith(href, '/')) {
+    return (
+      <Text
+        component={Link}
+        to={href}
+        textDecoration='underline'
+        {...props}
+      />
+    )
+  } else {
+    return (
+      <Text
+        component='a'
+        href={href}
+        target='_blank'
+        textDecoration='underline'
+        {...props}
+      />
+    )
+  }
+}
+const ul = props => <Container component='ul' marginTop={-1} paddingBottom {...props} />
 const li = props => (
   <Container component='li' displayFlex>
     <Text paddingRight={.5}>-</Text> <Text {...props} />
