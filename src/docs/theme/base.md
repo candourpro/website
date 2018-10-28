@@ -1,6 +1,4 @@
-import Candour from '../Candour'
-
-# Theming
+# Theme base
 
 For best component reuse, its best to do most of styling
 through a theme.
@@ -30,3 +28,8 @@ render(
   document.getElementById('root')
 )
 ```
+
+`base`
+
+Every component type (`Heading`, `Text`, etc.) inherit their `base`
+style.

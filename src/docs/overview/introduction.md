@@ -17,7 +17,7 @@ import { render } from 'react-dom'
 import { Container } from 'candour'
 
 render(
-  <Container backgroundColor='black' colorWhite padding={2}>
+  <Container backgroundColorBlack colorWhite padding={2}>
     Candour
   </Container>
 )
@@ -47,5 +47,6 @@ of many who use inline styles.
  <Candour marginLeft={-.2} /> tries to introduce little-to-no API to learn.
 That are introduced are simple and interconnected for the best learn/reward ratio.
 
-- Modifiers
+- Theming
 - Steps
+- Modifiers

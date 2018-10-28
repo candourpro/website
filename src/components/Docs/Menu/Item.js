@@ -24,7 +24,7 @@ export default ({
       to={to(slug, items)}
       color={params[0] === slug ? colors.blue : 'inherit'}
       displayBlock
-      marginBottom={1.5}
+      marginBottom
       fontWeight700
     >
       {name}

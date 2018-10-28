@@ -1,6 +1,6 @@
 import Candour from '../Candour'
 
-# Inline styles and modifiers
+# Inline styles and props
 
  <Candour marginLeft={-.2} /> uses inline styles to manage component styling
 internally.
@@ -25,38 +25,38 @@ Here's a short gist of advantages of inline styles:
 browser state (`:hover`, `:focus`, `:active`) support, automatic vendor
 prefixing and other inline style improvements.
 
-## Candour modifiers
+## Candour style props
 
- <Candour marginLeft={-.2} /> introduces a concept of component modifiers - a
+ <Candour marginLeft={-.2} /> introduces a concept of component style props - a
 way to style your components via `props` of a component.
 
 ```jsx
 render(
   <Container backgroundColor='black' color='white' padding='20px'>
-    Container with modifiers
+    Container with style props
   </Container>
 )
 ```
 
-Modifiers just translate it to:
+Style props just translate it to:
 ```js
 <Container style={{ backgroundColor: 'black', color: 'white', padding: '20px' }}>
-  Container with modifiers
+  Container with style props
 </Container>
 ```
 
-Modifiers allow for easier style merging and passing down to child components,
+Style props allow for easier style merging and passing down to child components,
 since you can use the spread syntax `<Container {...props} />` instead of
 merging the `style` prop.
 
 There is nothing else to learn - all CSS props are available to style through
 component `props`.
 
-### Advanced props usage
+### Advanced style props usage
 
 In addition to having the ability to specify `backgroudColor='black'`, you can
-also use a shorter syntax of `backgroundColorBlack` that does exactly the
-same thing. The shorter syntax enables simpler usage of boolean variables, so
+also use a shorter syntax of `backgroundColorBlack` that does the same exact
+thing. The shorter syntax enables simpler usage of boolean variables, so
 in case you want to have a style property depend on `isWeatherBad` you can
 write it as:
 
@@ -65,9 +65,10 @@ const isWeatherGood = true
 
 render(
   <Container
-    backgroundColor='black'
+    backgroundColorBlack
     backgroundColorGreen={isWeatherGood}
-    color='white'
+    colorWhite
+    fontWeight700
     padding='20px'
   >
     Container is green when weather is good
