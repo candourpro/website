@@ -13,6 +13,7 @@ import ComponentsHeading from './components/heading.md'
 import ComponentsButton from './components/button.md'
 import ComponentsInput from './components/input.md'
 import ComponentsCode from './components/code.md'
+import ComponentsCandourProvider from './components/candour-provider.md'
 
 export default [
   {
@@ -111,6 +112,11 @@ export default [
         name: 'Code',
         slug: 'components/code',
         component: ComponentsCode,
+      },
+      {
+        name: 'CandourProvider',
+        slug: 'components/candour-provider',
+        component: ComponentsCandourProvider,
       },
     ],
   },
