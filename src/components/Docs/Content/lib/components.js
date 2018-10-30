@@ -34,7 +34,7 @@ const th = props => (
     textAlignLeft
     borderBottom={borders.light}
     fontWeight600
-    level={5}
+    level={3}
     {...props}
   />
 )

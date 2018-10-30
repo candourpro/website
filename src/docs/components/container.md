@@ -33,12 +33,12 @@ you will ensure that your whole design will be with a common rhythm.
 `Container` has some useful <Candour />-related props. The rest of the props are
 passed to the underlying `component`.
 
-| Prop                                                  | Default  | Description                                           |
-| -------------                                         | -------- | -----                                                 |
-| `level`                                               | `6`      | Values between `1-6`                                  |
-| `component`                                           | `div`    | Any HTML or React component (`div`, `p`, `Link`, etc) |
-| *camelCased CSS key*                                  |          | Example: `fontWeight={700}`                           |
-| *camelCased CSS key and camelCased value combination* |          | Example: `<Container justifyContentSpaceBetween />`   |
+| Prop                                                                              | Default     | Description                                           |
+| -------------                                                                     | --------    | -----                                                 |
+| `level`                                                                           | `6`         | Values between `1-6`                                  |
+| `component`                                                                       | `div`       | Any HTML or React component (`div`, `p`, `Link`, etc) |
+| [*camelCased CSS key*](/docs/style-props/list)                                    |             | Example: `fontWeight={700}`                           |
+| [*camelCased CSS key*](/docs/style-props/list) *and camelCased value combination* |             | Example: `<Container justifyContentSpaceBetween />`   |
 
 > **Note**
 
@@ -46,5 +46,32 @@ passed to the underlying `component`.
 will likely not be really useful here, but is provided just for the
 completeness sake.
 
-Here are all the available keys:
-[CSS properties]
+## Theming
+
+Base style of `Container` is defined in theme at `container` key. You can also
+define styles of `Container` [levels](/docs/theme/levels) and
+additional `Container`-specific [modifiers](/docs/theme/modifiers).
+
+
+```js
+{
+  container: {
+    base: {
+      padding: 1,
+    },
+    5: {
+      fontSize: 2,
+    },
+    grey: {
+      color: 'grey',
+    },
+  },
+}
+```
+
+> **Note**
+
+> `base` or [levels](/docs/theme/levels) of `Container` will likely not be
+themed since it is a basic building block of <Candour />.
+Theming it would mean that it would change the style of every
+other <Candour />-based component.

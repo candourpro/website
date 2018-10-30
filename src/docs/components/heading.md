@@ -22,12 +22,12 @@ render(
 `Heading` has some useful <Candour />-related props. The rest of the props are
 passed to the underlying `component` (most likely `h1`, `h2`, `h3`, etc).
 
-| Prop                                                  | Default     | Description                                           |
-| -------------                                         | ----------- | -----                                                 |
-| `level`                                               | `1`         | Values between `1-6`                                  |
-| `component`                                           | `h${level}` | Any HTML or React component (`div`, `p`, `Link`, etc) |
-| *camelCased CSS key*                                  |             | Example: `fontWeight={700}`                           |
-| *camelCased CSS key and camelCased value combination* |             | Example: `<Heading alignTextCenter />`   |
+| Prop                                                                              | Default     | Description                                           |
+| -------------                                                                     | ----------- | -----                                                 |
+| `level`                                                                           | `1`         | Values between `1-6`                                  |
+| `component`                                                                       | `h${level}` | Any HTML or React component (`div`, `p`, `Link`, etc) |
+| [*camelCased CSS key*](/docs/style-props/list)                                    |             | Example: `fontWeight={700}`                           |
+| [*camelCased CSS key*](/docs/style-props/list) *and camelCased value combination* |             | Example: `<Heading alignTextCenter />`                |
 
 > **Note**
 
