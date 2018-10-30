@@ -11,6 +11,7 @@ import GettingStarted from './getting-started.md'
 import ComponentsContainer from './components/container.md'
 import ComponentsHeading from './components/heading.md'
 import ComponentsButton from './components/button.md'
+import ComponentsInput from './components/input.md'
 
 export default [
   {
@@ -99,6 +100,11 @@ export default [
         name: 'Button',
         slug: 'components/button',
         component: ComponentsButton,
+      },
+      {
+        name: 'Input',
+        slug: 'components/input',
+        component: ComponentsInput,
       },
     ],
   },

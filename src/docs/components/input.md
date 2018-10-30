@@ -1,42 +1,40 @@
 import Candour from '../Candour'
 
-# Button
+# Input
 
-`Button` is a built-in component that builds on a `Container` component.
+`Input` is a built-in component that builds on a `Container` component.
 
  ```jsx
 import { render } from 'react-dom'
-import { Button } from 'candour'
+import { Input } from 'candour'
 
 render(
-  <Button>
-    A button
-  </Button>
+  <Input placeholder='An input' />
 )
 ```
 
 ## Props
 
-`Button` has some useful <Candour />-related props. The rest of the props are
-passed to the underlying `component` (most likely `button`).
+`Input` has some useful <Candour />-related props. The rest of the props are
+passed to the underlying `component` (most likely `input`).
 
 | Prop                                                                              | Default     | Description                                           |
 | -------------                                                                     | ----------- | -----                                                 |
 | `level`                                                                           | `6`         | Values between `1-6`                                  |
-| `component`                                                                       | `button`    | Any HTML or React component (`div`, `p`, `Link`, etc) |
+| `component`                                                                       | `input`     | Any HTML or React component (`div`, `p`, `Link`, etc) |
 | [*camelCased CSS key*](/docs/style-props/list)                                    |             | Example: `fontWeight={700}`                           |
-| [*camelCased CSS key*](/docs/style-props/list) *and camelCased value combination* |             | Example: `<Button alignTextCenter />`                |
+| [*camelCased CSS key*](/docs/style-props/list) *and camelCased value combination* |             | Example: `<Input alignTextCenter />`                |
 
 ## Theming
 
-Base style of `Button` is defined in theme at `button` key. You can also
-define styles of `Button` [levels](/docs/theme/levels) and
-additional `Button`-specific [modifiers](/docs/theme/modifiers).
+Base style of `Input` is defined in theme at `input` key. You can also
+define styles of `Input` [levels](/docs/theme/levels) and
+additional `Input`-specific [modifiers](/docs/theme/modifiers).
 
 
 ```js
 {
-  button: {
+  input: {
     base: {
       backgroundColor: 'blue',
     },
