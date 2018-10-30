@@ -5,7 +5,7 @@ import Candour from '../Candour'
 Fluid design allows you to specify less breakpoints and enable
 a more adaptive user experience.
 
-If you resize your browser window, you'll notice that the "**Fluid heading**"
+If you resize your browser window, you'll notice that the "**FLUID**" heading
 below will change it's font size in proportion.
 
 ```jsx
@@ -14,7 +14,7 @@ import { Heading } from 'candour'
 
 render(
   <Heading>
-    Fluid heading
+    FLUID
   </Heading>
 )
 ```
@@ -31,12 +31,12 @@ block that every size of your design stems from (similar to grid).
 
 `step` is a size that is calculated from the current viewport width
 (`vw`). It changes proportionally to it in a similar way that `em` changes
-proportionally to the `font-size`. It is fluid between `14px` and `16px`.
+proportionally to the `font-size`. It is fluid between `14px` and `18px`.
 
 **Note**: to make designing for edge cases easier, `step` is capped with minimum and
 maximum viewport widths. `step` will not resize further if the viewport gets
 smaller than `320px` or bigger than `1600px`. So step size will always remain
-between `14px` and `16px`.
+between `14px` and `18px`.
 
 ### Usage
 
@@ -72,7 +72,7 @@ For step `1` count, this translates to:
 ```
 calc(
   14px +
-  (16px - 14px) *
+  (18px - 14px) *
   ((100vw - 320px) / (1600px - 320px))
 )
 ```
@@ -80,5 +80,5 @@ calc(
 
 When rendered in the DOM, `1` is converted to:
 ```
-calc(14px + (2px * ((100vw - 320px) / 1280)))
+calc(14px + (4px * ((100vw - 320px) / 1280)))
 ```
