@@ -12,6 +12,7 @@ import ComponentsContainer from './components/container.md'
 import ComponentsHeading from './components/heading.md'
 import ComponentsButton from './components/button.md'
 import ComponentsInput from './components/input.md'
+import ComponentsCode from './components/code.md'
 
 export default [
   {
@@ -105,6 +106,11 @@ export default [
         name: 'Input',
         slug: 'components/input',
         component: ComponentsInput,
+      },
+      {
+        name: 'Code',
+        slug: 'components/code',
+        component: ComponentsCode,
       },
     ],
   },
