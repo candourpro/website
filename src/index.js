@@ -8,7 +8,7 @@ import registerServiceWorker from './registerServiceWorker'
 import candourTheme from './theme/candour'
 
 ReactDOM.render(
-  <CandourProvider value={candourTheme}>
+  <CandourProvider theme={candourTheme}>
     <App />
   </CandourProvider>
 , document.getElementById('root'))

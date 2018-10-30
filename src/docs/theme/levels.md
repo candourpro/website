@@ -25,7 +25,7 @@ const candourTheme = {
 }
 
 render(
-  <CandourProvider value={candourTheme}>
+  <CandourProvider theme={candourTheme}>
     <Heading>
       Themed heading
     </Heading>

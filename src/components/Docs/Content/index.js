@@ -14,7 +14,7 @@ export default (props) => {
   return (
     <Container padding paddingLeft={2} paddingRight={2} width='100%'>
       <Text readable>
-        <CandourProvider value={candourMdxTheme}>
+        <CandourProvider theme={candourMdxTheme}>
           <CurrentComponent components={components} />
         </CandourProvider>
       </Text>
