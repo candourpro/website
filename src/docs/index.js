@@ -10,6 +10,7 @@ import ThemeLevels from './theme/levels.md'
 import GettingStarted from './getting-started.md'
 import ComponentsContainer from './components/container.md'
 import ComponentsHeading from './components/heading.md'
+import ComponentsButton from './components/button.md'
 
 export default [
   {
@@ -93,6 +94,11 @@ export default [
         name: 'Heading',
         slug: 'components/heading',
         component: ComponentsHeading,
+      },
+      {
+        name: 'Button',
+        slug: 'components/button',
+        component: ComponentsButton,
       },
     ],
   },

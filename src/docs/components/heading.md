@@ -12,7 +12,7 @@ import { Heading } from 'candour'
 
 render(
   <Heading level={2}>
-    I'm an H2 heading
+    An H2 heading
   </Heading>
 )
 ```
