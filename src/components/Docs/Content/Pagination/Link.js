@@ -17,7 +17,7 @@ export default ({
     <Text>
       {label}
     </Text>
-    <Text level={3} fontWeight600>
+    <Text level={4} fontWeight600>
       {label === 'Previous' && '←'} {name} {label === 'Next' && '→'}
     </Text>
   </Container>

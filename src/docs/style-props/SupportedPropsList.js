@@ -13,11 +13,13 @@ export default (props) => (
   <Toggle>
     {({ on, toggle }) => (
       <Container {...props}>
-        {_.map(on ? all : _.take(all, 5), (prop) => (
-          <Code key={prop} level={5} marginBottom={0} padding={.5}>
-            {camelCaseCss(prop)}
-          </Code>
-        ))}
+        <Code padding>
+          {_.map(on ? all : _.take(all, 5), (prop) => (
+            <Code key={prop} margin={0} padding={0}>
+              {camelCaseCss(prop)}
+            </Code>
+          ))}
+        </Code>
 
         <Container>
           {on || <Button onClick={toggle} marginTop>Show all ({all.length})</Button>}
