@@ -1,8 +1,10 @@
 import colors from './colors'
 
 export default {
-  text: {
+  container: {
     base: {
+      WebkitFontSmoothing: 'antialiased',
+      fontFamily: '"SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif',
       lineHeight: 1.5,
     },
   },
