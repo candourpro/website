@@ -1,4 +1,4 @@
-import Candour from './Candour'
+import Candour from '../Candour'
 
 # Install
 
@@ -33,7 +33,7 @@ render(
     Your app here
 
     <Text>
-      Candour elements will work anywhere inside your app
+      Candour components will use the theme anywhere in your app
     </Text>
   </CandourProvider>,
   document.getElementById('root')

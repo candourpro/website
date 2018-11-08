@@ -7,7 +7,8 @@ import StylePropsList from './style-props/list.md'
 import ThemeBase from './theme/base.md'
 import ThemeModifiers from './theme/modifiers.md'
 import ThemeLevels from './theme/levels.md'
-import GettingStarted from './getting-started.md'
+import GettingStartedInstall from './getting-started/install.md'
+import GettingStartedNormalize from './getting-started/normalize.md'
 import ComponentsContainer from './components/container.md'
 import ComponentsHeading from './components/heading.md'
 import ComponentsButton from './components/button.md'
@@ -40,7 +41,18 @@ export default [
   {
     name: 'Getting started',
     slug: 'getting-started',
-    component: GettingStarted,
+    items: [
+      {
+        name: 'Install',
+        slug: 'getting-started/install',
+        component: GettingStartedInstall,
+      },
+      {
+        name: 'Normalize',
+        slug: 'getting-started/normalize',
+        component: GettingStartedNormalize,
+      },
+    ],
   },
   {
     name: 'Theme',

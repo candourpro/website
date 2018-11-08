@@ -26,7 +26,7 @@ const inlineCode = props => (
   <Code display='inline' padding={0} paddingLeft={0.25} paddingRight={0.25} {...props} />
 )
 
-const table = props => <Container component='table' {...props} />
+const table = props => <Container component='table' paddingBottom={2} {...props} />
 const th = props => (
   <Text
     component='th'
@@ -78,6 +78,7 @@ const li = props => (
 )
 
 const p = props => <Text marginBottom {...props} />
+const blockquote = props => <Container paddingLeft borderLeft={borders.black} borderWidth={.5} {...props} />
 
 export default {
   h1: heading(1),
@@ -97,4 +98,5 @@ export default {
   a,
   ul,
   li,
+  blockquote,
 }

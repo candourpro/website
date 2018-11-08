@@ -11,6 +11,7 @@ import {
   Input,
   Code,
 } from 'candour'
+import CandourNormalize from '@candour/normalize'
 import borders from '../../../theme/borders'
 
 const sandboxer = () => ({
@@ -49,6 +50,7 @@ export default props => {
     Code,
     Button,
     Input,
+    CandourNormalize,
   }
 
   const codeFunction = new Function(..._.keys(inputs), code)(..._.values(inputs))
