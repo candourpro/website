@@ -1,11 +1,11 @@
 import OverviewIntroduction from './overview/introduction.md'
 import OverviewInlineStylesAndProps from './overview/inline-styles-and-props.md'
-import OverviewFluidDesignRhythmAndSteps from './overview/fluid-design-rhythm-and-steps.md'
 import StylePropsUsage from './style-props/usage.md'
 import StylePropsShorthand from './style-props/shorthand.md'
 import StylePropsList from './style-props/list.md'
 import ConvertersOverview from './converters/overview.md'
 import ConvertersFluidSteps from './converters/fluid-steps.md'
+import ConvertersColors from './converters/colors.md'
 import ThemeBase from './theme/base.md'
 import ThemeModifiers from './theme/modifiers.md'
 import ThemeLevels from './theme/levels.md'
@@ -32,11 +32,6 @@ export default [
         name: 'Inline styles and props',
         slug: 'overview/inline-styles-and-props',
         component: OverviewInlineStylesAndProps,
-      },
-      {
-        name: 'Fluid design rhythm and steps',
-        slug: 'overview/fluid-design-rhythm-and-steps',
-        component: OverviewFluidDesignRhythmAndSteps,
       },
     ],
   },
@@ -111,6 +106,11 @@ export default [
         name: 'fluidSteps',
         slug: 'converters/fluid-steps',
         component: ConvertersFluidSteps,
+      },
+      {
+        name: 'colors',
+        slug: 'converters/colors',
+        component: ConvertersColors,
       },
     ],
   },

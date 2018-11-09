@@ -31,7 +31,12 @@ render(
 )
 ```
 
-## List of available converters
+## Usage
+
+You can use both shorthand `colorRaddish` and longhand `color='raddish'`
+syntax with all converters. You can also use them in your [theme](/docs/theme/base).
+
+## List of available converters and their usage
 
 Here's a list of currently supported style value converters:
 
