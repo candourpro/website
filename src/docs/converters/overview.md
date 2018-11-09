@@ -19,8 +19,6 @@ render(
     converters={[fluidSteps, colors]}
     colors={{ raddish: '#D41E5C' }}
   >
-    Your app here
-
     <Text fontSize={2}>
       Size style values will be converted with fluid steps converter
     </Text>
