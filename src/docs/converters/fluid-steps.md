@@ -10,7 +10,8 @@ below will change it's font size in proportion.
 
 ```jsx
 import { render } from 'react-dom'
-import { CandourProvider, Heading, fluidSteps } from 'candour'
+import { CandourProvider, Heading } from 'candour'
+import fluidSteps from 'candour-fluid-steps-converter'
 
 render(
   <CandourProvider converters={[fluidSteps]}>
@@ -52,7 +53,8 @@ a viewport width-based `calc` css formula.
 
 ```jsx
 import { render } from 'react-dom'
-import { CandourProvider, Heading, fluidSteps } from 'candour'
+import { CandourProvider, Heading } from 'candour'
+import fluidSteps from 'candour-fluid-steps-converter'
 
 render(
   <CandourProvider converters={[fluidSteps]}>

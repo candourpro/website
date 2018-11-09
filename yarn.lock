@@ -846,6 +846,16 @@
     babel-preset-env "^1.6.1"
     babel-preset-minify "^0.3.0"
 
+"@candour/step@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@candour/step/-/step-2.0.0.tgz#fc21c9afb6acd3519ab7af12312f241418895c90"
+  integrity sha512-6wfCcmHQ1cjZNbhh5CggAD6mFAgbjHyPvXy65ws7hkjQumPnZTbk+EE7qza/Z9KBDh/HPinwic8+XFb/Sr/gDA==
+  dependencies:
+    "@candour/fluid" "^1.0.9"
+    babel-cli "^6.26.0"
+    babel-preset-env "^1.6.1"
+    babel-preset-minify "^0.3.0"
+
 "@csstools/convert-colors@^1.4.0":
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/@csstools/convert-colors/-/convert-colors-1.4.0.tgz#ad495dc41b12e75d588c6db8b9834f08fa131eb7"
@@ -2742,6 +2752,15 @@ camelcase@^5.0.0:
   version "5.0.0"
   resolved "https://registry.yarnpkg.com/camelcase/-/camelcase-5.0.0.tgz#03295527d58bd3cd4aa75363f35b2e8d97be2f42"
   integrity sha512-faqwZqnWxbxn+F1d399ygeamQNy3lPp/H9H6rNrqYh4FSVCtcY+3cub1MxA8o9mDd55mM8Aghuu/kuyYA6VTsA==
+
+candour-fluid-steps-converter@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/candour-fluid-steps-converter/-/candour-fluid-steps-converter-1.0.0.tgz#0ca68c8b784382a6c43374fdd0731c0bf3a9c8a9"
+  integrity sha512-+futD8g5soqkS0YxkVJqsYbmHJI+16URz3eTKkyuN3BTyfziwRe4YBW797o5r+bzLNBckeQPRwewAvcr3pl12g==
+  dependencies:
+    "@candour/step" "^2.0.0"
+    is-number "^7.0.0"
+    lodash "^4.17.11"
 
 candour-normalize@^1.0.1:
   version "1.0.1"
@@ -5889,6 +5908,11 @@ is-number@^4.0.0:
   resolved "https://registry.yarnpkg.com/is-number/-/is-number-4.0.0.tgz#0026e37f5454d73e356dfe6564699867c6a7f0ff"
   integrity sha512-rSklcAIlf1OmFdyAqbnWTLVelsQ58uvZ66S/ZyawjWqIviTWCjg2PzVGw8WUA+nNuPTqb4wgA+NszrJ+08LlgQ==
 
+is-number@^7.0.0:
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/is-number/-/is-number-7.0.0.tgz#7535345b896734d5f80c4d06c50955527a14f12b"
+  integrity sha512-41Cifkg6e8TylSpdtTpeLVMqvSBEVzTttHvERD741+pnZ8ANv0004MRL43QKPDlK9cGvNp6NZWZUBlbGXYxxng==
+
 is-obj@^1.0.0, is-obj@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/is-obj/-/is-obj-1.0.1.tgz#3e4729ac1f5fde025cd7d83a896dab9f4f67db0f"
@@ -6889,7 +6913,7 @@ lodash@^3.8.0:
   resolved "http://registry.npmjs.org/lodash/-/lodash-3.10.1.tgz#5bf45e8e49ba4189e17d482789dfd15bd140b7b6"
   integrity sha1-W/Rejkm6QYnhfUgnid/RW9FAt7Y=
 
-lodash@^4.13.1, lodash@^4.17.5, lodash@^4.2.0:
+lodash@^4.13.1, lodash@^4.17.11, lodash@^4.17.5, lodash@^4.2.0:
   version "4.17.11"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.11.tgz#b39ea6229ef607ecd89e2c8df12536891cac9b8d"
   integrity sha512-cQKh8igo5QUhZ7lg38DYWAxMvjSAKG0A8wGSVimP07SIUEK2UO+arSRKbRZWtelMtN5V0Hkwh5ryOto/SshYIg==

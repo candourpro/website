@@ -10,7 +10,8 @@ To set up style value converters, pass `converters` array to the `CandourProvide
 ```jsx
 import React from 'react'
 import { render } from 'react-dom'
-import { CandourProvider, Text, fluidSteps, colors } from 'candour'
+import { CandourProvider, Text, colors } from 'candour'
+import fluidSteps from 'candour-fluid-steps-converter'
 
 render(
   <CandourProvider
@@ -20,7 +21,7 @@ render(
     Your app here
 
     <Text fontSize={2}>
-      Size style values will be converted with fluidSteps converter
+      Size style values will be converted with fluid steps converter
     </Text>
 
     <Text colorRaddish>
