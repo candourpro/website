@@ -16,8 +16,8 @@ export default {
   },
   button: {
     base: {
-      backgroundColor: colors.black,
-      color: colors.white,
+      backgroundColor: 'black',
+      color: 'white',
       cursor: 'pointer',
       padding: 1,
       paddingTop: .5,

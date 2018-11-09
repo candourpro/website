@@ -2,6 +2,9 @@ import React from 'react'
 import { CandourProvider, Container, Text } from 'candour'
 
 import candourMdxTheme from '../../../theme/candourMdx'
+import candourParsers from '../../../theme/candourParsers'
+import colors from '../../../theme/colors'
+import borders from '../../../theme/borders'
 import Pagination from './Pagination/index'
 import GitHubMeta from './GitHubMeta/index'
 
@@ -14,7 +17,12 @@ export default (props) => {
   return (
     <Container padding paddingLeft={2} paddingRight={2} width='100%'>
       <Text readable>
-        <CandourProvider theme={candourMdxTheme}>
+        <CandourProvider
+          theme={candourMdxTheme}
+          parsers={candourParsers}
+          colors={colors}
+          borders={borders}
+        >
           <CurrentComponent components={components} />
         </CandourProvider>
       </Text>
