@@ -836,14 +836,6 @@
     babel-preset-minify "^0.3.0"
     number-parsing "^0.3.0"
 
-"@candour/normalize@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@candour/normalize/-/normalize-1.0.0.tgz#86228e33a639c5481d8bf40d38eadf8d7e0b1b5c"
-  integrity sha512-dyo1QtcmBnwwjBAyXBtMx0V1iBE1lkPwmEbD7Q5I/en5/avBu0hJVPIIYIoZQa7Sg6EXhJv+g8Gv3O64tWVlcQ==
-  dependencies:
-    radium "^0.25.0"
-    react "^16.6.1"
-
 "@candour/step@^1.0.11":
   version "1.0.11"
   resolved "https://registry.yarnpkg.com/@candour/step/-/step-1.0.11.tgz#50cc4fe21da17fa26a2369932c16f1c2bf7288d4"
@@ -2750,6 +2742,14 @@ camelcase@^5.0.0:
   version "5.0.0"
   resolved "https://registry.yarnpkg.com/camelcase/-/camelcase-5.0.0.tgz#03295527d58bd3cd4aa75363f35b2e8d97be2f42"
   integrity sha512-faqwZqnWxbxn+F1d399ygeamQNy3lPp/H9H6rNrqYh4FSVCtcY+3cub1MxA8o9mDd55mM8Aghuu/kuyYA6VTsA==
+
+candour-normalize@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/candour-normalize/-/candour-normalize-1.0.1.tgz#db35781952a837374e96736fd23b55e3d0d61e47"
+  integrity sha512-zNqwbqR7mnka1ul6ckLIG+2mSDp7ruxMfWfCIvE6HMI2hE5Xaxl64zWVNQXf/10S4KT5SPLIaO4W7pAuYB7Ykw==
+  dependencies:
+    radium "^0.25.0"
+    react "^16.6.1"
 
 candour@^4.0.3:
   version "4.0.3"

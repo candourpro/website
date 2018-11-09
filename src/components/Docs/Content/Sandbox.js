@@ -16,7 +16,7 @@ import {
   fontFamilies,
   custom,
 } from 'candour'
-import CandourNormalize from '@candour/normalize'
+import CandourNormalize from 'candour-normalize'
 
 const sandboxer = () => ({
   visitor: {

@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { CandourProvider } from 'candour'
-import CandourNormalize from '@candour/normalize'
+import CandourNormalize from 'candour-normalize'
 
 import App from './components/App'
 import registerServiceWorker from './registerServiceWorker'
