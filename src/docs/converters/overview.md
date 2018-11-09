@@ -37,7 +37,7 @@ Here's a list of currently supported style value converters:
 
 | Converter                                      | Input                                                           | Output
 | -------------                                  | --------                                                        | ---
-| [fluidStep](/docs/converters/fluid-step)       | Values for size props specified without type (`2`, `3.5`, etc.) | Fluid CSS value based on step (`calc(21px + (6 * ((100vw - 320px) / 1280)))`).
+| [fluidSteps](/docs/converters/fluid-steps)     | Values for size props specified without type (`2`, `3.5`, etc.) | Fluid CSS value based on step (`calc(21px + (6 * ((100vw - 320px) / 1280)))`).
 | [colors](/docs/converters/colors)              | All values for color properties                                 | Picks by key from `colors` config.
 | [borders](/docs/converters/borders)            | All values for border properties                                | Picks by key from `borders` config.
 | [fontFamilies](/docs/converters/font-families) | All values for font family properties                           | Picks by key from `fontFamilies` config.

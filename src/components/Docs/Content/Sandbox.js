@@ -64,9 +64,7 @@ export default props => {
 
   return (
     <Container borderLight padding>
-      <CandourProvider converters={[fluidSteps]}>
-        {codeFunction}
-      </CandourProvider>
+      {codeFunction}
     </Container>
   )
 }

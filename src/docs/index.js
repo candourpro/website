@@ -5,6 +5,7 @@ import StylePropsUsage from './style-props/usage.md'
 import StylePropsShorthand from './style-props/shorthand.md'
 import StylePropsList from './style-props/list.md'
 import ConvertersOverview from './converters/overview.md'
+import ConvertersFluidSteps from './converters/fluid-steps.md'
 import ThemeBase from './theme/base.md'
 import ThemeModifiers from './theme/modifiers.md'
 import ThemeLevels from './theme/levels.md'
@@ -105,6 +106,11 @@ export default [
         name: 'Overview',
         slug: 'converters/overview',
         component: ConvertersOverview,
+      },
+      {
+        name: 'fluidSteps',
+        slug: 'converters/fluid-steps',
+        component: ConvertersFluidSteps,
       },
     ],
   },
