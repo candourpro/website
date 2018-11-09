@@ -10,6 +10,7 @@ import {
   Button,
   Input,
   Code,
+  fluidSteps,
 } from 'candour'
 import CandourNormalize from '@candour/normalize'
 import borders from '../../../theme/borders'
@@ -57,7 +58,7 @@ export default props => {
 
   return (
     <Container border={borders.light} padding>
-      <CandourProvider>
+      <CandourProvider parsers={[fluidSteps]}>
         {codeFunction}
       </CandourProvider>
     </Container>
