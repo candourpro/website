@@ -8,7 +8,8 @@ Borders converter helps you define app-wide borders styles.
 
 ```jsx
 import { render } from 'react-dom'
-import { CandourProvider, Heading, borders } from 'candour'
+import { CandourProvider, Heading } from 'candour'
+import borders from 'candour-borders-converter'
 
 render(
   <CandourProvider

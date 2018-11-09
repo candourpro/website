@@ -10,13 +10,13 @@ import {
   Button,
   Input,
   Code,
-  colors,
-  borders,
   fontFamilies,
   custom,
 } from 'candour'
 import CandourNormalize from 'candour-normalize'
 import fluidSteps from 'candour-fluid-steps-converter'
+import colors from 'candour-colors-converter'
+import borders from 'candour-borders-converter'
 
 const sandboxer = () => ({
   visitor: {

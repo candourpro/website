@@ -846,16 +846,6 @@
     babel-preset-env "^1.6.1"
     babel-preset-minify "^0.3.0"
 
-"@candour/step@^2.0.0":
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/@candour/step/-/step-2.0.0.tgz#fc21c9afb6acd3519ab7af12312f241418895c90"
-  integrity sha512-6wfCcmHQ1cjZNbhh5CggAD6mFAgbjHyPvXy65ws7hkjQumPnZTbk+EE7qza/Z9KBDh/HPinwic8+XFb/Sr/gDA==
-  dependencies:
-    "@candour/fluid" "^1.0.9"
-    babel-cli "^6.26.0"
-    babel-preset-env "^1.6.1"
-    babel-preset-minify "^0.3.0"
-
 "@csstools/convert-colors@^1.4.0":
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/@csstools/convert-colors/-/convert-colors-1.4.0.tgz#ad495dc41b12e75d588c6db8b9834f08fa131eb7"
@@ -2753,14 +2743,35 @@ camelcase@^5.0.0:
   resolved "https://registry.yarnpkg.com/camelcase/-/camelcase-5.0.0.tgz#03295527d58bd3cd4aa75363f35b2e8d97be2f42"
   integrity sha512-faqwZqnWxbxn+F1d399ygeamQNy3lPp/H9H6rNrqYh4FSVCtcY+3cub1MxA8o9mDd55mM8Aghuu/kuyYA6VTsA==
 
-candour-fluid-steps-converter@^1.0.0:
+candour-borders-converter@^1.0.0:
   version "1.0.0"
-  resolved "https://registry.yarnpkg.com/candour-fluid-steps-converter/-/candour-fluid-steps-converter-1.0.0.tgz#0ca68c8b784382a6c43374fdd0731c0bf3a9c8a9"
-  integrity sha512-+futD8g5soqkS0YxkVJqsYbmHJI+16URz3eTKkyuN3BTyfziwRe4YBW797o5r+bzLNBckeQPRwewAvcr3pl12g==
+  resolved "https://registry.yarnpkg.com/candour-borders-converter/-/candour-borders-converter-1.0.0.tgz#544c6cf5e53700055d46a66bc916aff7b3e0a2c7"
+  integrity sha512-YB3S9Ohx6mqwM7pBJXWp4ShfKj3nGy58gMrdT6Eisdd/AEim+d5MUEsBlR1lU2hOUQCiT3u2xWXITWK5/HDvIQ==
   dependencies:
-    "@candour/step" "^2.0.0"
+    lodash "^4.17.11"
+
+candour-colors-converter@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/candour-colors-converter/-/candour-colors-converter-1.0.0.tgz#7738ac86bfea079c18cadff69aa2a1bf069bf2d7"
+  integrity sha512-T5H3yAkT34cTV7efIcvvSeJ+UGCj9+wMlieUZMYYPqFYZ1ELWSHuNJmEIltzZlglmHeq1Wr5zjMVH4DmqJ1F5A==
+  dependencies:
+    lodash "^4.17.11"
+
+candour-fluid-steps-converter@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/candour-fluid-steps-converter/-/candour-fluid-steps-converter-1.0.2.tgz#c69ca56fef4d3af7e8977d62b771c58dc6ab154a"
+  integrity sha512-AnCuBbMsgZBS/BMeZBJDq+MFicJVAifrD405/xsl7R95NoiQ/UeHyCXeEimQLoWlDOQQ9Fb/JY1YitGGv5/60g==
+  dependencies:
+    candour-step "^2.0.1"
     is-number "^7.0.0"
     lodash "^4.17.11"
+
+candour-fluid@^1.0.11:
+  version "1.0.11"
+  resolved "https://registry.yarnpkg.com/candour-fluid/-/candour-fluid-1.0.11.tgz#556021509842e45a9e69e93d0058ef5b7e392b13"
+  integrity sha512-sPKKFHjuLyGZUtRoA91KmgWFCTCR97yxlwPFH0gHUAcQZPnyiNlmIJ155Mw2gIePbsIOTSX1Yh0DOW/RMGxAXw==
+  dependencies:
+    number-parsing "^0.3.0"
 
 candour-normalize@^1.0.1:
   version "1.0.1"
@@ -2769,6 +2780,13 @@ candour-normalize@^1.0.1:
   dependencies:
     radium "^0.25.0"
     react "^16.6.1"
+
+candour-step@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/candour-step/-/candour-step-2.0.1.tgz#c423cde63d1f69f2642b35d676e042b36c054719"
+  integrity sha512-izGfJ3jwNmoVMbpW0TyQffUIcyx0gG2LGcSpmNzeN8jq5CocDpIR8CYGk5O6SBSa31ERm9OpkRk+y8WMBlZwnQ==
+  dependencies:
+    candour-fluid "^1.0.11"
 
 candour@^4.0.3:
   version "4.0.3"

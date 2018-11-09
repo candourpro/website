@@ -10,8 +10,9 @@ To set up style value converters, pass `converters` array to the `CandourProvide
 ```jsx
 import React from 'react'
 import { render } from 'react-dom'
-import { CandourProvider, Text, colors } from 'candour'
+import { CandourProvider, Text } from 'candour'
 import fluidSteps from 'candour-fluid-steps-converter'
+import colors from 'candour-colors-converter'
 
 render(
   <CandourProvider
