@@ -62,4 +62,4 @@ Here's a list of currently supported style value converters:
 
 > **Note**
 
-> You can also learn how to create a new converter [here](/converters/create-new).
+> You can also learn how to create a new converter [here](/docs/converters/create-new).
