@@ -11,9 +11,11 @@ import {
   Input,
   Code,
   fluidSteps,
+  colors,
+  borders,
+  custom,
 } from 'candour'
 import CandourNormalize from '@candour/normalize'
-import borders from '../../../theme/borders'
 
 const sandboxer = () => ({
   visitor: {
@@ -52,13 +54,17 @@ export default props => {
     Button,
     Input,
     CandourNormalize,
+    fluidSteps,
+    colors,
+    borders,
+    custom,
   }
 
   const codeFunction = new Function(..._.keys(inputs), code)(..._.values(inputs))
 
   return (
-    <Container border={borders.light} padding>
-      <CandourProvider parsers={[fluidSteps]}>
+    <Container borderLight padding>
+      <CandourProvider converters={[fluidSteps]}>
         {codeFunction}
       </CandourProvider>
     </Container>

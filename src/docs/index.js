@@ -4,6 +4,7 @@ import OverviewFluidDesignRhythmAndSteps from './overview/fluid-design-rhythm-an
 import StylePropsUsage from './style-props/usage.md'
 import StylePropsShorthand from './style-props/shorthand.md'
 import StylePropsList from './style-props/list.md'
+import ConvertersOverview from './converters/overview.md'
 import ThemeBase from './theme/base.md'
 import ThemeModifiers from './theme/modifiers.md'
 import ThemeLevels from './theme/levels.md'
@@ -85,14 +86,25 @@ export default [
         component: StylePropsUsage,
       },
       {
+        name: 'List',
+        slug: 'style-props/list',
+        component: StylePropsList,
+      },
+      {
         name: 'Shorthand',
         slug: 'style-props/shorthand',
         component: StylePropsShorthand,
       },
+    ],
+  },
+  {
+    name: 'Converters',
+    slug: 'converters',
+    items: [
       {
-        name: 'List',
-        slug: 'style-props/list',
-        component: StylePropsList,
+        name: 'Overview',
+        slug: 'converters/overview',
+        component: ConvertersOverview,
       },
     ],
   },

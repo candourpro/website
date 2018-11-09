@@ -16,7 +16,7 @@ export default () => (
       <Switch>
         <Route exact path='/' component={Landing} />
         <Route exact path='/docs/*' component={Docs} />
-        <Redirect exact from='/docs' to='/docs/introduction' />
+        <Redirect exact from='/docs' to='/docs/overview/introduction' />
       </Switch>
     </Router>
   </Container>

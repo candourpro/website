@@ -6,14 +6,14 @@ import CandourNormalize from '@candour/normalize'
 import App from './components/App'
 import registerServiceWorker from './registerServiceWorker'
 import candourTheme from './theme/candour'
-import candourParsers from './theme/candourParsers'
+import candourConverters from './theme/candourConverters'
 import colors from './theme/colors'
 import borders from './theme/borders'
 
 ReactDOM.render(
   <CandourProvider
     theme={candourTheme}
-    parsers={candourParsers}
+    converters={candourConverters}
     colors={colors}
     borders={borders}
   >

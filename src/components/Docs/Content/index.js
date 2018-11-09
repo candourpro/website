@@ -2,7 +2,7 @@ import React from 'react'
 import { CandourProvider, Container, Text } from 'candour'
 
 import candourMdxTheme from '../../../theme/candourMdx'
-import candourParsers from '../../../theme/candourParsers'
+import candourConverters from '../../../theme/candourConverters'
 import colors from '../../../theme/colors'
 import borders from '../../../theme/borders'
 import Pagination from './Pagination/index'
@@ -19,7 +19,7 @@ export default (props) => {
       <Text readable>
         <CandourProvider
           theme={candourMdxTheme}
-          parsers={candourParsers}
+          converters={candourConverters}
           colors={colors}
           borders={borders}
         >
