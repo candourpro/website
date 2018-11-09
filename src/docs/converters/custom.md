@@ -10,7 +10,8 @@ to have a bunch of custom values.
 
 ```jsx
 import { render } from 'react-dom'
-import { CandourProvider, Heading, custom } from 'candour'
+import { CandourProvider, Heading } from 'candour'
+import custom from 'candour-custom'
 
 render(
   <CandourProvider

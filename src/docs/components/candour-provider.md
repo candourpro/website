@@ -8,7 +8,7 @@ import Candour from '../Candour'
 import React from 'react'
 import { render } from 'react-dom'
 import { CandourProvider, Text } from 'candour'
-import fluidSteps from 'candour-fluid-steps-converter'
+import fluidSteps from 'candour-fluid-steps'
 
 const theme = {
   text: {

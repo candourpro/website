@@ -10,7 +10,7 @@ reuse them easily.
 ```jsx
 import { render } from 'react-dom'
 import { CandourProvider, Heading } from 'candour'
-import colors from 'candour-colors-converter'
+import colors from 'candour-colors'
 
 render(
   <CandourProvider

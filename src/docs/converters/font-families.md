@@ -8,7 +8,8 @@ Font families converter helps you define app-wide font family styles.
 
 ```jsx
 import { render } from 'react-dom'
-import { CandourProvider, Heading, fontFamilies } from 'candour'
+import { CandourProvider, Heading } from 'candour'
+import fontFamilies from 'candour-font-families'
 
 render(
   <CandourProvider
