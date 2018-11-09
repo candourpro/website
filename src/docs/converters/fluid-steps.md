@@ -15,8 +15,11 @@ import fluidSteps from 'candour-fluid-steps'
 
 render(
   <CandourProvider converters={[fluidSteps]}>
-    <Heading fontSize={10}>
+    <Heading fontSize={1}>
       FLUID
+    </Heading>
+    <Heading fontSize='16px'>
+      FIXED
     </Heading>
   </CandourProvider>
 )
