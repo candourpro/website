@@ -36,6 +36,18 @@ render(
 You can use both shorthand `colorRaddish` and longhand `color='raddish'`
 syntax with all converters. You can also use them in your [theme](/docs/theme/base).
 
+### Style value naming
+
+Redefined value names need to follow CSS style `kebab-case` format.
+
+To define a multi-word color:
+```
+{ 'light-red': '#D45D8A' }
+```
+
+If you define it as `light-red`, you can still use it from the components
+as `colorLightRed` or `color='light-red'`.
+
 ## List of available converters and their usage
 
 Here's a list of currently supported style value converters:
@@ -48,39 +60,6 @@ Here's a list of currently supported style value converters:
 | [fontFamilies](/docs/converters/font-families) | All values for font family properties                           | Picks by key from `fontFamilies` config.
 | [custom](/docs/converters/custom)              | All values of all properties                                    | Picks by key from `custom` config.
 
-## Creating your own converter
+> **Note**
 
-Converters will be evaluated following their order in the array. The first
-converter that returns `true` from it's `match` function will return the `value`
-to the style prop.
-
-### Structure
-
-This is the gist of the `colors` converter:
-```
-import _ from 'lodash'
-
-export default {
-  match: ({ colors }, value, key) => (
-    colors && value && key.match(/color/i) && _.has(colors, value)
-  ),
-  value: ({ colors }, value) => colors[value],
-}
-```
-
-The arguments that are passed to `match` and `value` functions:
-
-| Argument                     | Description
-| ---                          | ---
-| All `CandourProvider` props  | This usually includes `theme` and converter configs (`colors`, etc.)
-| `value`                      | The value of the style prop as it's passed initially (`raddish`, `1`, etc.)
-| `key`                        | The key of the style prop (`border`, `color`, etc.)
-
-#### Match function
-
-If `match` function returns `true`, the `value` function will be returned from
-the converter and used as the value of the style prop.
-
-#### Value function
-
-Returns the converted value to be used as the final prop value.
+> You can also learn how to create a new converter [here](/converters/create-new).

@@ -13,6 +13,7 @@ import {
   fluidSteps,
   colors,
   borders,
+  fontFamilies,
   custom,
 } from 'candour'
 import CandourNormalize from '@candour/normalize'
@@ -57,6 +58,7 @@ export default props => {
     fluidSteps,
     colors,
     borders,
+    fontFamilies,
     custom,
   }
 

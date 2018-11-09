@@ -43,7 +43,7 @@ maximum viewport widths. The step will not resize further if the viewport gets
 smaller than `320px` or bigger than `1600px`. So step size will always remain
 between `14px` and `18px`.
 
-### Usage
+## Usage
 
 Every CSS-based size property of component's style is converted
 to `step` by default. `fontSize` of "**Heading with font size**" below
@@ -63,7 +63,7 @@ render(
 )
 ```
 
-### Step calculation & formula
+## Step calculation & formula
 
 Step is calculated through a CSS `calc` function so the impact on performace
 is minimal:

@@ -6,6 +6,10 @@ import StylePropsList from './style-props/list.md'
 import ConvertersOverview from './converters/overview.md'
 import ConvertersFluidSteps from './converters/fluid-steps.md'
 import ConvertersColors from './converters/colors.md'
+import ConvertersBorders from './converters/borders.md'
+import ConvertersFontFamilies from './converters/font-families.md'
+import ConvertersCustom from './converters/custom.md'
+import ConvertersCreateNew from './converters/create-new.md'
 import ThemeBase from './theme/base.md'
 import ThemeModifiers from './theme/modifiers.md'
 import ThemeLevels from './theme/levels.md'
@@ -103,14 +107,34 @@ export default [
         component: ConvertersOverview,
       },
       {
-        name: 'fluidSteps',
+        name: 'Fluid steps',
         slug: 'converters/fluid-steps',
         component: ConvertersFluidSteps,
       },
       {
-        name: 'colors',
+        name: 'Colors',
         slug: 'converters/colors',
         component: ConvertersColors,
+      },
+      {
+        name: 'Borders',
+        slug: 'converters/borders',
+        component: ConvertersBorders,
+      },
+      {
+        name: 'Font families',
+        slug: 'converters/font-families',
+        component: ConvertersFontFamilies,
+      },
+      {
+        name: 'Custom',
+        slug: 'converters/custom',
+        component: ConvertersCustom,
+      },
+      {
+        name: 'Create a new converter',
+        slug: 'converters/create-new',
+        component: ConvertersCreateNew,
       },
     ],
   },

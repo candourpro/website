@@ -5,7 +5,7 @@ import Candour from '../Candour'
 Colors converter is helpful when you want to define app-wide color theme and
 reuse them easily.
 
-## Setup
+## Usage
 
 ```jsx
 import { render } from 'react-dom'
@@ -25,5 +25,14 @@ render(
 
 > **Note**
 
-> You can both create your own color names or redefine existing colors (like `red`,
-`blue`, etc).
+> You can both create your own color names or redefine existing CSS colors
+(like `red`, `blue`, etc.)
+
+## Supported props
+
+```
+color
+backgroundColor
+borderColor
+// ...and anything else that matches /color/i
+```
