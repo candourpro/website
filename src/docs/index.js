@@ -17,6 +17,7 @@ import GettingStartedInstall from './getting-started/install.md'
 import GettingStartedNormalize from './getting-started/normalize.md'
 import ComponentsContainer from './components/container.md'
 import ComponentsHeading from './components/heading.md'
+import ComponentsText from './components/text.md'
 import ComponentsButton from './components/button.md'
 import ComponentsInput from './components/input.md'
 import ComponentsCode from './components/code.md'
@@ -151,6 +152,11 @@ export default [
         name: 'Heading',
         slug: 'components/heading',
         component: ComponentsHeading,
+      },
+      {
+        name: 'Text',
+        slug: 'components/text',
+        component: ComponentsText,
       },
       {
         name: 'Button',
