@@ -14,12 +14,15 @@ Main goals:
 
 ```jsx
 import { render } from 'react-dom'
-import { Container } from 'candour'
+import { CandourProvider, Container } from 'candour'
+import fluidSteps from 'candour-fluid-steps'
 
 render(
-  <Container backgroundColor='black' colorWhite padding={2}>
-    Candour
-  </Container>
+  <CandourProvider converters={[fluidSteps]}>
+    <Container backgroundColor='black' colorWhite padding={2}>
+      Candour
+    </Container>
+  </CandourProvider>
 )
 ```
 

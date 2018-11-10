@@ -15,7 +15,7 @@
     "candour-fluid-steps": "^1.0.5",
     "candour-font-families": "^1.0.1",
     "candour-normalize": "^1.0.1",
-    "known-css-properties": "^0.9.0",
+    "css-properties": "^2.0.2",
     "libreact": "^2.6.0",
     "mdx": "^0.3.1",
     "react": "^16.5.0",

@@ -18,24 +18,26 @@ import custom from 'candour-custom'
 
 export default props => (
   <Container borderLight padding>
-    <CodeSandbox
-      imports={{
-        React,
-        CandourProvider,
-        Heading,
-        Container,
-        Text,
-        Code,
-        Button,
-        Input,
-        CandourNormalize,
-        fluidSteps,
-        colors,
-        borders,
-        fontFamilies,
-        custom,
-      }}
-      {...props}
-    />
+    <CandourProvider>
+      <CodeSandbox
+        imports={{
+          React,
+          CandourProvider,
+          Heading,
+          Container,
+          Text,
+          Code,
+          Button,
+          Input,
+          CandourNormalize,
+          fluidSteps,
+          colors,
+          borders,
+          fontFamilies,
+          custom,
+        }}
+        {...props}
+      />
+    </CandourProvider>
   </Container>
 )

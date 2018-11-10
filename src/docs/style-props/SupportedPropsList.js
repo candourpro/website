@@ -5,7 +5,7 @@ import {
   Code,
   Button,
 } from 'candour'
-import { all } from 'known-css-properties'
+import cssProperties from 'css-properties'
 import camelCaseCss from 'camelcase-css'
 import { Toggle } from 'libreact/lib/Toggle'
 
@@ -14,7 +14,7 @@ export default (props) => (
     {({ on, toggle }) => (
       <Container {...props}>
         <Code padding>
-          {_.map(on ? all : _.take(all, 5), (prop) => (
+          {_.map(on ? cssProperties : _.take(cssProperties, 5), (prop) => (
             <Code key={prop} margin={0} padding={0}>
               {camelCaseCss(prop)}
             </Code>
@@ -22,7 +22,7 @@ export default (props) => (
         </Code>
 
         <Container>
-          {on || <Button onClick={toggle} marginTop>Show all ({all.length})</Button>}
+          {on || <Button onClick={toggle} marginTop>Show all ({cssProperties.length})</Button>}
         </Container>
       </Container>
     )}
