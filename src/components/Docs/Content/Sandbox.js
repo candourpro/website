@@ -1,7 +1,5 @@
 import React from 'react'
-import _ from 'lodash'
-import { transform } from '@babel/core'
-import babelPresetReact from '@babel/preset-react'
+import CodeSandbox from 'react-code-sandbox'
 import {
   CandourProvider,
   Container,
@@ -18,55 +16,26 @@ import borders from 'candour-borders'
 import fontFamilies from 'candour-font-families'
 import custom from 'candour-custom'
 
-const sandboxer = () => ({
-  visitor: {
-    Program(path, state) {
-      const imports = _.filter(path.get('body'), (p) => p.isImportDeclaration())
-      _.each(imports, (i) => i.remove())
-    },
-    Identifier(path) {
-      if (path.node.name !== 'render') return
-
-      path.node.name = 'return render'
-    },
-  },
-})
-
-export default props => {
-  const { code } = transform(props.children, {
-    presets: [
-      babelPresetReact,
-    ],
-    plugins: [
-      sandboxer,
-    ],
-  })
-
-  const render = (result) => result
-
-  const inputs = {
-    React,
-    render,
-    CandourProvider,
-    Heading,
-    Container,
-    Text,
-    Code,
-    Button,
-    Input,
-    CandourNormalize,
-    fluidSteps,
-    colors,
-    borders,
-    fontFamilies,
-    custom,
-  }
-
-  const codeFunction = new Function(..._.keys(inputs), code)(..._.values(inputs))
-
-  return (
-    <Container borderLight padding>
-      {codeFunction}
-    </Container>
-  )
-}
+export default props => (
+  <Container borderLight padding>
+    <CodeSandbox
+      imports={{
+        React,
+        CandourProvider,
+        Heading,
+        Container,
+        Text,
+        Code,
+        Button,
+        Input,
+        CandourNormalize,
+        fluidSteps,
+        colors,
+        borders,
+        fontFamilies,
+        custom,
+      }}
+      {...props}
+    />
+  </Container>
+)

@@ -20,7 +20,7 @@ export default () => (
   >
     <Container component={Link} to='/' displayFlex alignItemsCenter>
       <Container height width backgroundColor={colors.black} />
-      <Text marginLeft>
+      <Text marginLeft fontWeight700>
         Candour
       </Text>
     </Container>
