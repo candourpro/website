@@ -4,7 +4,7 @@ import Candour from '../Candour'
 
 `Code` is a built-in component that builds on a `Container` component.
 
- ```jsx
+ ```jsx sandbox
 import { render } from 'react-dom'
 import { Code } from 'candour'
 

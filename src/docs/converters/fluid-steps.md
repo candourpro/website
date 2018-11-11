@@ -8,7 +8,7 @@ a more adaptive user experience.
 If you resize your browser window, you'll notice that the "**FLUID**" heading
 below will change it's font size in proportion.
 
-```jsx
+```jsx sandbox
 import { render } from 'react-dom'
 import { CandourProvider, Heading } from 'candour'
 import fluidSteps from 'candour-fluid-steps'
@@ -54,7 +54,7 @@ to `step` by default. `fontSize` of "**Heading with font size**" below
 gets converted from `1` to `step(1)` which in turn gets converted into
 a viewport width-based `calc` css formula.
 
-```jsx
+```jsx sandbox
 import { render } from 'react-dom'
 import { CandourProvider, Heading } from 'candour'
 import fluidSteps from 'candour-fluid-steps'

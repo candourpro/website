@@ -12,7 +12,7 @@ Main goals:
 - Enable reusable design / theming
 - Improve development speed
 
-```jsx
+```jsx sandbox
 import { render } from 'react-dom'
 import { CandourProvider, Container } from 'candour'
 import fluidSteps from 'candour-fluid-steps'

@@ -11,16 +11,12 @@ import Sandbox from '../Sandbox'
 import borders from '../../../../theme/borders'
 
 const heading = level => props => <Heading level={level} {...props} />
-const code = props => {
-  if (props.className !== 'language-jsx') return <Code {...props} />
-
-  return (
-    <Container>
-      <Sandbox {...props} />
-      <Code {...props} />
-    </Container>
-  )
-}
+const code = ({ sandbox, ...rest }) => (
+  <Container>
+    {sandbox && <Sandbox {...rest} />}
+    <Code {...rest} />
+  </Container>
+)
 
 const inlineCode = props => (
   <Code display='inline' padding={0} paddingLeft={0.25} paddingRight={0.25} {...props} />

@@ -5,7 +5,7 @@ a component is certain prop is `true`.
 
 You can define modifiers per component type theme or across all components.
 
-```jsx
+```jsx sandbox
 import React from 'react'
 import { render } from 'react-dom'
 import { CandourProvider, Heading } from 'candour'

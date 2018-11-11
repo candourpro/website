@@ -8,7 +8,7 @@ truthy/falsy variables, to be exact).
 In case you want to have a style property depend on `isWeatherGood` boolean,
 you can write it as:
 
-```jsx
+```jsx sandbox
 const isWeatherGood = true
 
 render(

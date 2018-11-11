@@ -7,7 +7,7 @@ reuse them easily.
 
 ## Usage
 
-```jsx
+```jsx sandbox
 import { render } from 'react-dom'
 import { CandourProvider, Heading } from 'candour'
 import colors from 'candour-colors'

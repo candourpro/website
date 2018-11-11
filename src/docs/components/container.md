@@ -9,7 +9,7 @@ this one.
 To stay consistent, it is advisable to use it in places where you'd
 otherwise use a `div` or `span` HTML tag.
 
-```jsx
+```jsx sandbox
 import { render } from 'react-dom'
 import { Container } from 'candour'
 

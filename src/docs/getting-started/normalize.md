@@ -24,7 +24,7 @@ npm install candour-normalize --save
 
 ## Usage
 
-```jsx
+```jsx sandbox
 import React from 'react'
 import { render } from 'react-dom'
 import { CandourProvider } from 'candour'

@@ -6,7 +6,7 @@ Borders converter helps you define app-wide borders styles.
 
 ## Usage
 
-```jsx
+```jsx sandbox
 import { render } from 'react-dom'
 import { CandourProvider, Heading } from 'candour'
 import borders from 'candour-borders'

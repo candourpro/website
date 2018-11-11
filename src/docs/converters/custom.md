@@ -8,7 +8,7 @@ to have a bunch of custom values.
 
 ## Usage
 
-```jsx
+```jsx sandbox
 import { render } from 'react-dom'
 import { CandourProvider, Heading } from 'candour'
 import custom from 'candour-custom'

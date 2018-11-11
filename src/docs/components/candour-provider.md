@@ -4,7 +4,7 @@ import Candour from '../Candour'
 
 `CandourProvider` is used to set up <Candour />.
 
-```jsx
+```jsx sandbox
 import React from 'react'
 import { render } from 'react-dom'
 import { CandourProvider, Text } from 'candour'

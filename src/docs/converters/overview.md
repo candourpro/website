@@ -7,7 +7,7 @@ borders or any other custom style value that is likely to be reused.
 
 To set up style value converters, pass `converters` array to the `CandourProvider`.
 
-```jsx
+```jsx sandbox
 import React from 'react'
 import { render } from 'react-dom'
 import { CandourProvider, Text } from 'candour'

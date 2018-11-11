@@ -6,7 +6,7 @@ Font families converter helps you define app-wide font family styles.
 
 ## Usage
 
-```jsx
+```jsx sandbox
 import { render } from 'react-dom'
 import { CandourProvider, Heading } from 'candour'
 import fontFamilies from 'candour-font-families'

@@ -6,7 +6,7 @@ import Candour from '../Candour'
 
 It has special `level` prop that defines which HTML component and style to use.
 
- ```jsx
+ ```jsx sandbox
 import { render } from 'react-dom'
 import { Heading } from 'candour'
 

@@ -6,7 +6,7 @@ sequentially.
 The first converter that returns `true` from it's `match` function will return
 the `value` to the style prop.
 
-```jsx
+```jsx sandbox
 import React from 'react'
 import { render } from 'react-dom'
 import { CandourProvider, Text } from 'candour'

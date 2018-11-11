@@ -15,7 +15,7 @@ To setup <Candour />, just wrap your app with `CandourProvider`.
 Here's a simple example with
 [Create React App](https://facebook.github.io/create-react-app/):
 
-```jsx
+```jsx sandbox
 import React from 'react'
 import { render } from 'react-dom'
 import { CandourProvider, Text } from 'candour'

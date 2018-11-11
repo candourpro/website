@@ -4,7 +4,7 @@ import Candour from '../Candour'
 
 `Input` is a built-in component that builds on a `Container` component.
 
- ```jsx
+ ```jsx sandbox
 import { render } from 'react-dom'
 import { Input } from 'candour'
 

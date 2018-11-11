@@ -8,7 +8,7 @@ themed with different styles.
 
 Here's an example of two different levels of `<Heading />` component usage:
 
-```jsx
+```jsx sandbox
 import React from 'react'
 import { render } from 'react-dom'
 import { CandourProvider, Heading } from 'candour'

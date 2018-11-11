@@ -5,7 +5,7 @@ import Candour from '../Candour'
  <Candour marginLeft={-.2} /> introduces a concept of component style props - a
 way to style your components via `props` of a primitive component.
 
-```jsx
+```jsx sandbox
 render(
   <Container backgroundColor='black' color='white' padding='20px'>
     Container with style props
