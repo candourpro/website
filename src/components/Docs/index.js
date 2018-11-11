@@ -1,18 +1,19 @@
 import React from 'react'
 import {
   Container,
+  useBreakpoints,
 } from 'candour'
 
-import Header from '../Header'
 import Menu from './Menu/index'
 import Content from './Content/index'
 
-export default (props) => (
-  <Container>
-    <Header />
+export default (props) => {
+  const { small } = useBreakpoints()
+
+  return (
     <Container borderTopLight displayFlex>
-      <Menu {...props} />
+      {!small && <Menu {...props} />}
       <Content {...props} />
     </Container>
-  </Container>
-)
+  )
+}

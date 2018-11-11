@@ -16,6 +16,7 @@ ReactDOM.render(
     converters={candourConverters}
     colors={colors}
     borders={borders}
+    breakpoints={{ small: '700px' }}
   >
     <CandourNormalize />
     <App />

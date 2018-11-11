@@ -16,9 +16,11 @@ export default ({
     params,
   },
   match,
+  level,
 }) => (
   <>
     <Text
+      level={level}
       component={Link}
       to={to(slug, items)}
       colorBlue={params[0] === slug}
@@ -30,7 +32,7 @@ export default ({
     </Text>
 
     {!!items.length && <Container paddingLeft>
-      <Items items={items} match={match} />
+      <Items level={level} items={items} match={match} />
     </Container>}
   </>
 )
