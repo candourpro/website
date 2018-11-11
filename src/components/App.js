@@ -6,6 +6,7 @@ import {
   Route,
   Redirect,
 } from 'react-router-dom'
+import ScrollToTop from 'react-router-scroll-top'
 
 import Landing from './Landing'
 import Docs from './Docs/index'
@@ -13,11 +14,13 @@ import Docs from './Docs/index'
 export default () => (
   <Container>
     <Router>
-      <Switch>
-        <Route exact path='/' component={Landing} />
-        <Route exact path='/docs/*' component={Docs} />
-        <Redirect exact from='/docs' to='/docs/overview/introduction' />
-      </Switch>
+      <ScrollToTop>
+        <Switch>
+          <Route exact path='/' component={Landing} />
+          <Route exact path='/docs/*' component={Docs} />
+          <Redirect exact from='/docs' to='/docs/overview/introduction' />
+        </Switch>
+      </ScrollToTop>
     </Router>
   </Container>
 )
