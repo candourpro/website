@@ -2217,19 +2217,16 @@ candour-step@^2.0.2:
   dependencies:
     candour-fluid "^1.0.11"
 
-candour@^5.0.1:
-  version "5.0.1"
-  resolved "https://registry.yarnpkg.com/candour/-/candour-5.0.1.tgz#ca29f8b23040bf27bfd0c7d0d73d40408ea8fbc0"
-  integrity sha512-514iBZG9vuVqq39T0PD56FgDuA8aZhH+DvYe1VJNqXmQsiIaDdQyr/bkj6J1kh03orYHTf4LRKP9Q/f0Sq4Edw==
+candour@^5.0.2:
+  version "5.0.2"
+  resolved "https://registry.yarnpkg.com/candour/-/candour-5.0.2.tgz#212f52dcacf03f309870b2a0a4b0e3ca657cb710"
+  integrity sha512-50o+AwMnj0O4xfbDvVu5lEvaK+EaWqu4652NMksGVzJOcoKfYCXZubwe1NnknzC/l4n2R3Qn+H6QovC7UiiHEA==
   dependencies:
     camelcase-css "^2.0.1"
     css-properties "^2.0.2"
-    filter-invalid-dom-props "^2.0.0"
-    filter-react-dom-props "^0.0.2"
     lodash "^4.17.10"
     radium "^0.24.0"
     react "^16.4.0"
-    traverse "^0.6.6"
 
 caniuse-api@^3.0.0:
   version "3.0.0"
@@ -4080,18 +4077,6 @@ fill-range@^4.0.0:
     repeat-string "^1.6.1"
     to-regex-range "^2.1.0"
 
-filter-invalid-dom-props@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/filter-invalid-dom-props/-/filter-invalid-dom-props-2.0.0.tgz#527f1494cb3c4f282a73c43804153eb80c42dc2c"
-  integrity sha1-Un8UlMs8Tygqc8Q4BBU+uAxC3Cw=
-  dependencies:
-    html-attributes "1.1.0"
-
-filter-react-dom-props@^0.0.2:
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/filter-react-dom-props/-/filter-react-dom-props-0.0.2.tgz#d5c1e5a89c13534cebe3930a22afa9ae3238813b"
-  integrity sha1-1cHlqJwTU0zr45MKIq+prjI4gTs=
-
 finalhandler@1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/finalhandler/-/finalhandler-1.1.1.tgz#eebf4ed840079c83f4249038c9d703008301b105"
@@ -4744,11 +4729,6 @@ hsla-regex@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/hsla-regex/-/hsla-regex-1.0.0.tgz#c1ce7a3168c8c6614033a4b5f7877f3b225f9c38"
   integrity sha1-wc56MWjIxmFAM6S194d/OyJfnDg=
-
-html-attributes@1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/html-attributes/-/html-attributes-1.1.0.tgz#82027a4fac7a6070ea6c18cc3886aea18d6dea09"
-  integrity sha1-ggJ6T6x6YHDqbBjMOIauoY1t6gk=
 
 html-comment-regex@^1.1.0:
   version "1.1.1"
@@ -10138,11 +10118,6 @@ tr46@^1.0.1:
   integrity sha1-qLE/1r/SSJUZZ0zN5VujaTtwbQk=
   dependencies:
     punycode "^2.1.0"
-
-traverse@^0.6.6:
-  version "0.6.6"
-  resolved "https://registry.yarnpkg.com/traverse/-/traverse-0.6.6.tgz#cbdf560fd7b9af632502fed40f918c157ea97137"
-  integrity sha1-y99WD9e5r2MlAv7UD5GMFX6pcTc=
 
 trim-lines@^1.0.0:
   version "1.1.1"
