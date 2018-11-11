@@ -15,7 +15,7 @@ export default _.merge(
     },
     code: {
       base: {
-        backgroundColor: 'super-light-blue',
+        backgroundColor: 'light-blue',
         width: '100%',
         boxSizing: 'border-box',
         marginBottom: 2,

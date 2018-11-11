@@ -12,6 +12,7 @@ Here's an example of two different levels of `<Heading />` component usage:
 import React from 'react'
 import { render } from 'react-dom'
 import { CandourProvider, Heading } from 'candour'
+import fluidSteps from 'candour-fluid-steps'
 
 const candourTheme = {
   heading: {
@@ -25,7 +26,7 @@ const candourTheme = {
 }
 
 render(
-  <CandourProvider theme={candourTheme}>
+  <CandourProvider theme={candourTheme} converters={[fluidSteps]}>
     <Heading>
       Themed heading
     </Heading>
