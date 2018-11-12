@@ -8,9 +8,6 @@ export default {
   readable: {
     maxWidth: '768px',
   },
-  roundCorners: {
-    borderRadius: '4px',
-  },
   button: {
     base: {
       backgroundColor: 'black',
@@ -18,10 +15,11 @@ export default {
       cursor: 'pointer',
       padding: 1,
       paddingTop: .5,
-      paddingBottom: .5,
+      paddingBottom: .55,
+      borderRadius: '2px',
 
       ':hover': {
-        backgroundColor: 'blue',
+        backgroundColor: 'dark-blue',
       },
     },
   },

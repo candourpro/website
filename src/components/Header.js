@@ -45,7 +45,6 @@ export default (props) => {
             href='https://github.com/candourpro/candour'
             target='_blank'
             marginLeft={3}
-            padding={0.5}
           >
             GitHub
           </Button>
