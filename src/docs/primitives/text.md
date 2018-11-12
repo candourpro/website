@@ -2,9 +2,9 @@ import Candour from '../Candour'
 
 # Text
 
-`Text` is a built-in component that builds on a `Container` component.
+`Text` is a built-in primitive that builds on `Container`.
 
-It has special `level` prop that defines which HTML component and style to use.
+It has special `level` prop that defines which style to use.
 
  ```jsx sandbox
 import { render } from 'react-dom'
@@ -12,7 +12,7 @@ import { Text } from 'candour'
 
 render(
   <Text>
-    A text component
+    A text primitive
   </Text>
 )
 ```

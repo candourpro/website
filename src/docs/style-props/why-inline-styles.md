@@ -6,7 +6,7 @@ import Candour from '../Candour'
 internally.
 
 You won't usually use the `style` prop directly since <Candour /> abstracts it
-through its component modifiers and theming, but using inline styles provides
+through its modifiers and theming, but using inline styles provides
 many advantages over using CSS class names.
 
 If you're skeptical about this, you can check out

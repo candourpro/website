@@ -1,9 +1,9 @@
 # Modifiers
 
 Modifiers are additional styles you can define on your theme to modify
-a component is certain prop is `true`.
+a component if a certain prop is present (`true`).
 
-You can define modifiers per component type theme or across all components.
+You can define modifiers per primitive type theme or across all primitives.
 
 ```jsx sandbox
 import React from 'react'

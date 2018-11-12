@@ -31,5 +31,5 @@ render(
 
 `base`
 
-Every component type (`Heading`, `Text`, etc.) inherit their `base`
+Every primitive type (`Heading`, `Text`, etc.) inherit their `base`
 style.

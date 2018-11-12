@@ -1,4 +1,4 @@
-import Candour from '../Candour'
+import Candour from './Candour'
 
 # CandourProvider
 

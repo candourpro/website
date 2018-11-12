@@ -2,7 +2,7 @@ import Candour from '../Candour'
 
 # Heading
 
-`Heading` is a built-in component that builds on a `Container` component.
+`Heading` is a built-in primitive that builds on `Container`.
 
 It has special `level` prop that defines which HTML component and style to use.
 
@@ -31,7 +31,7 @@ passed to the underlying `component` (most likely `h1`, `h2`, `h3`, etc).
 
 > **Note**
 
-> `Heading` is the only component from <Candour />, that has `level` default
+> `Heading` is the only primitive from <Candour />, that has `level` default
 at `1`. This is because `h1` is more commonly used than `h6`.
 
 ## Theming

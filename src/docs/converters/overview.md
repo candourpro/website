@@ -45,7 +45,7 @@ To define a multi-word color:
 { 'light-red': '#D45D8A' }
 ```
 
-If you define it as `light-red`, you can still use it from the components
+If you define it as `light-red`, you can still use it from the primitives
 as `colorLightRed` or `color='light-red'`.
 
 ## List of available converters and their usage

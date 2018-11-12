@@ -2,8 +2,8 @@ import Candour from '../Candour'
 
 # Container
 
-Container is the most basic primitive component of <Candour />.
-Every other component builds on this `Container` and passes all the props to
+Container is the most basic primitive of <Candour />.
+Every other primitive builds on this `Container` and passes all the props to
 this one.
 
 To stay consistent, it is advisable to use it in places where you'd
@@ -74,4 +74,4 @@ additional `Container`-specific [modifiers](/docs/theme/modifiers).
 > `base` or [levels](/docs/theme/levels) of `Container` will likely not be
 themed since it is a basic building block of <Candour />.
 Theming it would mean that it would change the style of every
-other <Candour />-based component.
+other <Candour />-based primitive.

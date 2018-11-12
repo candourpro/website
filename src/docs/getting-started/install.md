@@ -33,7 +33,7 @@ render(
     Your app here
 
     <Text>
-      Candour components will use the theme anywhere in your app
+      Candour primitives will use the theme anywhere in your app
     </Text>
   </CandourProvider>,
   document.getElementById('root')

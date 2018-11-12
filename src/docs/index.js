@@ -23,7 +23,8 @@ import PrimitivesLink from './primitives/link.md'
 import PrimitivesButton from './primitives/button.md'
 import PrimitivesInput from './primitives/input.md'
 import PrimitivesCode from './primitives/code.md'
-import PrimitivesCandourProvider from './primitives/candour-provider.md'
+import PrimitivesCreateNew from './primitives/create-new.md'
+import CandourProvider from './candour-provider.md'
 
 export default [
   {
@@ -136,6 +137,11 @@ export default [
     ],
   },
   {
+    name: 'CandourProvider',
+    slug: 'candour-provider',
+    component: CandourProvider,
+  },
+  {
     name: 'Breakpoints',
     slug: 'breakpoints',
     component: Breakpoints,
@@ -180,9 +186,9 @@ export default [
         component: PrimitivesCode,
       },
       {
-        name: 'CandourProvider',
-        slug: 'primitives/candour-provider',
-        component: PrimitivesCandourProvider,
+        name: 'Create a new primitive',
+        slug: 'primitives/create-new',
+        component: PrimitivesCreateNew,
       },
     ],
   },

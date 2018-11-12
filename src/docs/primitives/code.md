@@ -2,7 +2,7 @@ import Candour from '../Candour'
 
 # Code
 
-`Code` is a built-in component that builds on a `Container` component.
+`Code` is a built-in primitive that builds on `Container`.
 
  ```jsx sandbox
 import { render } from 'react-dom'

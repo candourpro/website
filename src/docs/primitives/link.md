@@ -12,7 +12,7 @@ import { Link } from 'candour'
 
 render(
   <Link href='https://github.com/candourpro/candour' target='_blank'>
-    A link component
+    A link primitive
   </Link>
 )
 ```
