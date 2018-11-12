@@ -1,11 +1,12 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link as RouterLink } from 'react-router-dom'
 import _ from 'lodash'
 import {
   Container,
   Heading,
   Text,
   Code,
+  Link,
 } from 'candour'
 import Sandbox from '../Sandbox'
 import borders from '../../../../theme/borders'
@@ -49,23 +50,22 @@ const td = props => <Container
 
 const strong = props => <Text component='strong' fontWeight600 {...props} />
 const hr = props => <Container paddingBottom {...props} />
+
 const a = ({ href, ...props }) => {
   if (_.startsWith(href, '/')) {
     return (
-      <Text
-        component={Link}
+      <Link
+        component={RouterLink}
         to={href}
-        textDecoration='underline'
         {...props}
       />
     )
   } else {
     return (
-      <Text
+      <Link
         component='a'
         href={href}
         target='_blank'
-        textDecoration='underline'
         {...props}
       />
     )

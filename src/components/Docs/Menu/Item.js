@@ -1,7 +1,7 @@
 import React from 'react'
 import _ from 'lodash'
-import { Text, Container } from 'candour'
-import { Link } from 'react-router-dom'
+import { Text, Container, Link } from 'candour'
+import { Link as RouterLink } from 'react-router-dom'
 
 import Items from './Items'
 
@@ -21,9 +21,9 @@ export default ({
   alwaysOpen,
 }) => (
   <>
-    <Text
+    <Link
       level={level}
-      component={Link}
+      component={RouterLink}
       to={to(slug, items)}
       colorBlue={params[0] === slug}
       displayBlock
@@ -31,7 +31,7 @@ export default ({
       fontWeight700
     >
       {name}
-    </Text>
+    </Link>
 
     {!!items.length && (alwaysOpen || _.startsWith(params[0], slug)) && <Container paddingLeft>
       <Items level={level} items={items} match={match} />

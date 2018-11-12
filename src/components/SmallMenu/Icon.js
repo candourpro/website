@@ -1,9 +1,10 @@
 import React from 'react'
 import {
-  Link,
+  Link as RouterLink,
 } from 'react-router-dom'
 import {
   Container,
+  Link,
 } from 'candour'
 
 export default ({
@@ -13,8 +14,8 @@ export default ({
     } = {},
   },
 }) => (
-  <Container
-    component={Link}
+  <Link
+    component={RouterLink}
     to={{ state: { menu: !menu } }}
     padding
     paddingRight={0}
@@ -25,5 +26,5 @@ export default ({
       height={.5}
       width={1.25}
     />
-  </Container>
+  </Link>
 )

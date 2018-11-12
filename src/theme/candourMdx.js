@@ -21,5 +21,10 @@ export default _.merge(
         marginBottom: 2,
       },
     },
+    link: {
+      base: {
+        textDecoration: 'underline',
+      },
+    },
   },
 )

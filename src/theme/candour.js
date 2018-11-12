@@ -19,6 +19,17 @@ export default {
       padding: 1,
       paddingTop: .5,
       paddingBottom: .5,
+
+      ':hover': {
+        backgroundColor: 'blue',
+      },
+    },
+  },
+  link: {
+    base: {
+      ':hover': {
+        color: 'blue',
+      },
     },
   },
 }

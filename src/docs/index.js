@@ -16,13 +16,14 @@ import ThemeModifiers from './theme/modifiers.md'
 import ThemeLevels from './theme/levels.md'
 import GettingStartedInstall from './getting-started/install.md'
 import GettingStartedNormalize from './getting-started/normalize.md'
-import ComponentsContainer from './components/container.md'
-import ComponentsHeading from './components/heading.md'
-import ComponentsText from './components/text.md'
-import ComponentsButton from './components/button.md'
-import ComponentsInput from './components/input.md'
-import ComponentsCode from './components/code.md'
-import ComponentsCandourProvider from './components/candour-provider.md'
+import PrimitivesContainer from './primitives/container.md'
+import PrimitivesHeading from './primitives/heading.md'
+import PrimitivesText from './primitives/text.md'
+import PrimitivesLink from './primitives/link.md'
+import PrimitivesButton from './primitives/button.md'
+import PrimitivesInput from './primitives/input.md'
+import PrimitivesCode from './primitives/code.md'
+import PrimitivesCandourProvider from './primitives/candour-provider.md'
 
 export default [
   {
@@ -140,43 +141,48 @@ export default [
     component: Breakpoints,
   },
   {
-    name: 'Components',
-    slug: 'components',
+    name: 'Primitives',
+    slug: 'primitives',
     items: [
       {
         name: 'Container',
-        slug: 'components/container',
-        component: ComponentsContainer,
+        slug: 'primitives/container',
+        component: PrimitivesContainer,
       },
       {
         name: 'Heading',
-        slug: 'components/heading',
-        component: ComponentsHeading,
+        slug: 'primitives/heading',
+        component: PrimitivesHeading,
       },
       {
         name: 'Text',
-        slug: 'components/text',
-        component: ComponentsText,
+        slug: 'primitives/text',
+        component: PrimitivesText,
+      },
+      {
+        name: 'Link',
+        slug: 'primitives/link',
+        component: PrimitivesLink,
       },
       {
         name: 'Button',
-        slug: 'components/button',
-        component: ComponentsButton,
+        slug: 'primitives/button',
+        component: PrimitivesButton,
       },
       {
         name: 'Input',
-        slug: 'components/input',
-        component: ComponentsInput,
+        slug: 'primitives/input',
+        component: PrimitivesInput,
       },
       {
         name: 'Code',
-        slug: 'components/code',
-        component: ComponentsCode,
+        slug: 'primitives/code',
+        component: PrimitivesCode,
       },
       {
         name: 'CandourProvider',
-        slug: 'components/candour-provider',
-        component: ComponentsCandourProvider,
+        slug: 'primitives/candour-provider',
+        component: PrimitivesCandourProvider,
       },
     ],
   },

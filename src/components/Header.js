@@ -2,11 +2,12 @@ import React from 'react'
 import {
   Container,
   Text,
+  Link,
   Button,
   useBreakpoints,
 } from 'candour'
 import {
-  Link,
+  Link as RouterLink,
 } from 'react-router-dom'
 import colors from '../theme/colors'
 import SmallMenuIcon from './SmallMenu/Icon'
@@ -25,16 +26,20 @@ export default (props) => {
         paddingBottom={1.5}
         fontWeight700
       >
-        <Container component={Link} to='/' displayFlex alignItemsCenter>
+        <Link component={RouterLink} to='/' displayFlex alignItemsCenter>
           <Container height width backgroundColor={colors.black} />
           <Text marginLeft fontWeight700>
             Candour
           </Text>
-        </Container>
+        </Link>
         {!small && <Container displayFlex alignItemsCenter>
-          <Text component={Link} to='/docs/overview' marginLeft={3}>
+          <Link
+            component={RouterLink}
+            to='/docs/overview'
+            marginLeft={3}
+          >
             Docs
-          </Text>
+          </Link>
           <Button
             component='a'
             href='https://github.com/candourpro/candour'

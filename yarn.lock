@@ -2274,15 +2274,16 @@ candour-step@^2.0.3:
   dependencies:
     candour-fluid "^1.0.12"
 
-candour@5.1.0:
-  version "5.1.0"
-  resolved "https://registry.yarnpkg.com/candour/-/candour-5.1.0.tgz#3cccdd9d2a7ac101f83b63c434903c26a2aa31b4"
-  integrity sha512-g47cRP7zUhoFmSRYTJWJ2/7gLbqkg41Nx/KJcTk2S2QNsUeQlvvMjC1Dw+rYij9YGnwKSeHdZATJnrMhcyTaNg==
+candour@^5.3.0:
+  version "5.3.0"
+  resolved "https://registry.yarnpkg.com/candour/-/candour-5.3.0.tgz#55bc4c4c172ef95ab293ad9baef8a08366c9f07a"
+  integrity sha512-7al5LkCzigOX2uC/kZjDnU8xYKKGZayUshUCyejhAQ/PjXhBKIW8urcASKOLpbHqxaTgnNop1s+iKWSNrJFu+w==
   dependencies:
     camelcase-css "^2.0.1"
     css-properties "^2.0.2"
     lodash "^4.17.10"
-    radium "^0.24.0"
+    radium "^0.25.0"
+    traverse "^0.6.6"
 
 caniuse-api@^3.0.0:
   version "3.0.0"
@@ -8499,15 +8500,6 @@ querystringify@^2.0.0:
   resolved "https://registry.yarnpkg.com/querystringify/-/querystringify-2.0.0.tgz#fa3ed6e68eb15159457c89b37bc6472833195755"
   integrity sha512-eTPo5t/4bgaMNZxyjWx6N2a6AuE0mq51KWvpc7nU/MAqixcI6v6KrGUKES0HaomdnolQBBXU/++X6/QQ9KL4tw==
 
-radium@^0.24.0:
-  version "0.24.1"
-  resolved "https://registry.yarnpkg.com/radium/-/radium-0.24.1.tgz#0a370ce761cfccc4103e058e9b5cbd679b7ea159"
-  integrity sha512-UNt2WOSdG7Z1TwPkC2ICQR88bhE00eoiOC2ei1Pe0S67kGfud98vAXfX254L0tn3J1+aXlXrK8YxDZipB6QbDA==
-  dependencies:
-    exenv "^1.2.1"
-    inline-style-prefixer "^4.0.0"
-    prop-types "^15.5.8"
-
 radium@^0.25.0:
   version "0.25.0"
   resolved "https://registry.yarnpkg.com/radium/-/radium-0.25.0.tgz#d039bb4e13a3f224c3d4e22bfbcd766048e8caa5"
@@ -10228,6 +10220,11 @@ tr46@^1.0.1:
   integrity sha1-qLE/1r/SSJUZZ0zN5VujaTtwbQk=
   dependencies:
     punycode "^2.1.0"
+
+traverse@^0.6.6:
+  version "0.6.6"
+  resolved "https://registry.yarnpkg.com/traverse/-/traverse-0.6.6.tgz#cbdf560fd7b9af632502fed40f918c157ea97137"
+  integrity sha1-y99WD9e5r2MlAv7UD5GMFX6pcTc=
 
 trim-lines@^1.0.0:
   version "1.1.1"
