@@ -34,10 +34,15 @@ export default (props) => {
           <Text component={Link} to='/docs/overview/introduction' marginLeft={3}>
             Docs
           </Text>
-          <Text marginLeft={3}>
+          <Text
+            component='a'
+            href='https://github.com/candourpro/candour'
+            target='_blank'
+            marginLeft={3}
+          >
             GitHub
           </Text>
-          <Text marginLeft={3}>
+          <Text component={Link} to='/docs/getting-started/install' marginLeft={3}>
             Get started
           </Text>
         </Container>}
