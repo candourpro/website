@@ -32,7 +32,7 @@ export default (props) => {
           </Text>
         </Container>
         {!small && <Container displayFlex alignItemsCenter>
-          <Text component={Link} to='/docs/overview/introduction' marginLeft={3}>
+          <Text component={Link} to='/docs/overview' marginLeft={3}>
             Docs
           </Text>
           <Button

@@ -1,8 +1,8 @@
-import OverviewIntroduction from './overview/introduction.md'
-import OverviewInlineStylesAndProps from './overview/inline-styles-and-props.md'
+import Overview from './overview.md'
 import StylePropsUsage from './style-props/usage.md'
 import StylePropsShorthand from './style-props/shorthand.md'
 import StylePropsList from './style-props/list.md'
+import StylePropsWhyInlineStyles from './style-props/why-inline-styles.md'
 import ConvertersOverview from './converters/overview.md'
 import ConvertersFluidSteps from './converters/fluid-steps.md'
 import ConvertersColors from './converters/colors.md'
@@ -28,18 +28,7 @@ export default [
   {
     name: 'Overview',
     slug: 'overview',
-    items: [
-      {
-        name: 'Introduction',
-        slug: 'overview/introduction',
-        component: OverviewIntroduction,
-      },
-      {
-        name: 'Inline styles and props',
-        slug: 'overview/inline-styles-and-props',
-        component: OverviewInlineStylesAndProps,
-      },
-    ],
+    component: Overview,
   },
   {
     name: 'Getting started',
@@ -96,6 +85,11 @@ export default [
         name: 'Shorthand',
         slug: 'style-props/shorthand',
         component: StylePropsShorthand,
+      },
+      {
+        name: 'Why inline styles',
+        slug: 'style-props/why-inline-styles',
+        component: StylePropsWhyInlineStyles,
       },
     ],
   },
