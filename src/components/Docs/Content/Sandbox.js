@@ -1,5 +1,6 @@
 import React from 'react'
 import CodeSandbox from 'react-code-sandbox'
+import { Link as RouterLink } from 'react-router-dom'
 import {
   CandourProvider,
   Container,
@@ -24,6 +25,7 @@ export default props => (
       <CodeSandbox
         imports={{
           React,
+          RouterLink,
           CandourProvider,
           Heading,
           Container,

@@ -8,7 +8,7 @@
     "@mdx-js/loader": "^0.16.0",
     "@mdx-js/tag": "^0.16.0",
     "camelcase-css": "^2.0.1",
-    "candour": "^5.3.1",
+    "candour": "^5.3.2",
     "candour-borders": "^1.0.1",
     "candour-colors": "^1.0.1",
     "candour-custom": "^1.0.0",

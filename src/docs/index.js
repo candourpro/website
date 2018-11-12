@@ -25,6 +25,7 @@ import PrimitivesInput from './primitives/input.md'
 import PrimitivesCode from './primitives/code.md'
 import PrimitivesCreateNew from './primitives/create-new.md'
 import CandourProvider from './candour-provider.md'
+import Faq from './faq.md'
 
 export default [
   {
@@ -191,5 +192,10 @@ export default [
         component: PrimitivesCreateNew,
       },
     ],
+  },
+  {
+    name: 'FAQ',
+    slug: 'faq',
+    component: Faq,
   },
 ]
