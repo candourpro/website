@@ -5,7 +5,7 @@ import docs from '../../../docs/index'
 import Items from './Items'
 
 export default (props) => (
-  <Container padding borderRightLight minWidth={8} minHeight='100vh'>
+  <Container padding borderRightLight minWidth={10} minHeight='100vh'>
     <Items items={docs} {...props} />
   </Container>
 )

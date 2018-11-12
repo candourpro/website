@@ -12,6 +12,6 @@ export default ({
   if (!menu) return null
 
   return (
-    <Menu level={4} {...rest} />
+    <Menu level={4} alwaysOpen {...rest} />
   )
 }

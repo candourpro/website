@@ -2239,10 +2239,10 @@ candour-custom@^1.0.0:
   dependencies:
     lodash "^4.17.11"
 
-candour-fluid-steps@^1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/candour-fluid-steps/-/candour-fluid-steps-1.2.0.tgz#74d6fd7e83464655cbb50a07c208f1f570d48780"
-  integrity sha512-/3VADj5jS2JKDlhfRzuAXpmyOIz5lstM+jH4hG2Z2myMupd0aSOL0SBLm1SZzbltcFa/xhj9sjmemS2C+zymhA==
+candour-fluid-steps@^1.3.0:
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/candour-fluid-steps/-/candour-fluid-steps-1.3.0.tgz#5566142d01a751f8282c5aa26b7415c7fb8bb8cb"
+  integrity sha512-aHGeqJP5It9krMfu4OS0Pxe5PYn4V6pN39qEnMLEVWPiX8Mg85DgzJaD6mbhqa8xqnJsJ5pO7yvPtgmW8e4Skw==
   dependencies:
     candour-step "^2.0.2"
     is-number "^7.0.0"

@@ -1,4 +1,5 @@
 import React from 'react'
+import _ from 'lodash'
 import { Text, Container } from 'candour'
 import { Link } from 'react-router-dom'
 
@@ -17,6 +18,7 @@ export default ({
   },
   match,
   level,
+  alwaysOpen,
 }) => (
   <>
     <Text
@@ -31,7 +33,7 @@ export default ({
       {name}
     </Text>
 
-    {!!items.length && <Container paddingLeft>
+    {!!items.length && (alwaysOpen || _.startsWith(params[0], slug)) && <Container paddingLeft>
       <Items level={level} items={items} match={match} />
     </Container>}
   </>
