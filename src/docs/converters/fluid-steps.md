@@ -17,10 +17,10 @@ render(
   <CandourProvider
     converters={[fluidSteps]}
   >
-    <Heading fontSize={10}>
+    <Heading fontSize={5}>
       FLUID
     </Heading>
-    <Heading fontSize='150px'>
+    <Heading fontSize='75px'>
       FIXED
     </Heading>
   </CandourProvider>

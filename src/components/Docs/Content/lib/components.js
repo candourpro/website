@@ -22,7 +22,12 @@ const inlineCode = props => (
   <Code display='inline' padding={0} paddingLeft={0.25} paddingRight={0.25} {...props} />
 )
 
-const table = props => <Container component='table' paddingBottom={2} {...props} />
+const table = props => (
+  <Container overflowXAuto marginBottom={2}>
+    <Container component='table' {...props} />
+  </Container>
+)
+
 const th = props => (
   <Text
     component='th'
