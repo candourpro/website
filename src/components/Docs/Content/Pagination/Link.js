@@ -1,8 +1,8 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link as RouterLink } from 'react-router-dom'
 import {
-  Container,
   Text,
+  Link,
 } from 'candour'
 
 export default ({
@@ -13,12 +13,12 @@ export default ({
   },
   ...rest,
 }) => (
-  <Container component={Link} to={`/docs/${slug}`} {...rest}>
+  <Link component={RouterLink} to={`/docs/${slug}`} {...rest}>
     <Text>
       {label}
     </Text>
     <Text level={4} fontWeight600>
       {label === 'Previous' && '←'} {name} {label === 'Next' && '→'}
     </Text>
-  </Container>
+  </Link>
 )
