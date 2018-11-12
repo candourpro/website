@@ -14,11 +14,13 @@ import { CandourProvider, Heading } from 'candour'
 import fluidSteps from 'candour-fluid-steps'
 
 render(
-  <CandourProvider converters={[fluidSteps]}>
-    <Heading fontSize={1}>
+  <CandourProvider
+    converters={[fluidSteps]}
+  >
+    <Heading fontSize={10}>
       FLUID
     </Heading>
-    <Heading fontSize='16px'>
+    <Heading fontSize='150px'>
       FIXED
     </Heading>
   </CandourProvider>
@@ -38,21 +40,21 @@ stems from (similar to grid).
 
 Step is a size that is calculated from the current viewport width
 (`vw`). It changes proportionally to it in a similar way that `em` changes
-proportionally to the `font-size`. Step is fluid between `14px` and `18px`.
+proportionally to the `font-size`. By default, step is fluid between
+`14px` and `18px`.
 
 > **Note**
 
 > To make designing for edge cases easier, step is capped with minimum and
-maximum viewport widths. The step will not resize further if the viewport gets
-smaller than `320px` or bigger than `1600px`. So step size will always remain
-between `14px` and `18px`.
+maximum viewport widths. By default, the step will not resize further
+if the viewport gets smaller than `320px` or bigger than `1600px`.
+So step size will always remain between `14px` and `18px`.
 
 ## Usage
 
-Every CSS-based size property of component's style is converted
-to `step` by default. `fontSize` of "**Heading with font size**" below
-gets converted from `1` to `step(1)` which in turn gets converted into
-a viewport width-based `calc` css formula.
+Every CSS-based size property that does not have a unit (`px`, `em`, etc.)
+is converted with `fluidSteps`. `fontSize` of "**Heading with font size**" below
+gets converted from `1` into a viewport width-based `calc` css formula.
 
 ```jsx sandbox
 import { render } from 'react-dom'
@@ -67,6 +69,34 @@ render(
   </CandourProvider>
 )
 ```
+
+## Configure
+
+You can pass `fluidSteps` prop to `CandourProvider` with configuration.
+
+```jsx sandbox
+import { render } from 'react-dom'
+import { CandourProvider, Heading } from 'candour'
+import fluidSteps from 'candour-fluid-steps'
+
+render(
+  <CandourProvider
+    converters={[fluidSteps]}
+    fluidSteps={{ min: 5, max: 30 }}
+  >
+    <Heading fontSize={1}>
+      Heading with font size
+    </Heading>
+  </CandourProvider>
+)
+```
+
+| Key        | Default | Description
+| ---        | ---     | ---
+| `min`      | `14`    | Minimum step size (in `px`) that will be used when the viewport width equals `minWidth`.
+| `max`      | `18`    | Maximum step size (in `px`) that will be used when the viewport width equals `maxWidth`.
+| `minWidth` | `320`   | Minimum viewport size (in `px`) beyond which step stops getting smaller.
+| `maxWidth` | `1600`  | Maximum viewport size (in `px`) beyond which step stops getting bigger.
 
 ## Step calculation & formula
 
