@@ -10,6 +10,7 @@ import ConvertersBorders from './converters/borders.md'
 import ConvertersFontFamilies from './converters/font-families.md'
 import ConvertersCustom from './converters/custom.md'
 import ConvertersCreateNew from './converters/create-new.md'
+import Breakpoints from './breakpoints.md'
 import ThemeBase from './theme/base.md'
 import ThemeModifiers from './theme/modifiers.md'
 import ThemeLevels from './theme/levels.md'
@@ -138,6 +139,11 @@ export default [
         component: ConvertersCreateNew,
       },
     ],
+  },
+  {
+    name: 'Breakpoints',
+    slug: 'breakpoints',
+    component: Breakpoints,
   },
   {
     name: 'Components',

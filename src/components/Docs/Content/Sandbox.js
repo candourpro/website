@@ -8,6 +8,7 @@ import {
   Button,
   Input,
   Code,
+  useBreakpoints,
 } from 'candour'
 import CandourNormalize from 'candour-normalize'
 import fluidSteps from 'candour-fluid-steps'
@@ -35,6 +36,7 @@ export default props => (
           borders,
           fontFamilies,
           custom,
+          useBreakpoints,
         }}
         {...props}
       />
