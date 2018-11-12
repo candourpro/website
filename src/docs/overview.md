@@ -2,13 +2,14 @@ import Candour from './Candour'
 
 # Overview
 
- <Candour marginLeft={-.2} /> enables building fully configurable React
-design systems.
+ <Candour marginLeft={-.2} /> is a fully configurable inline style system
+for React.
 
 **Core features:**
-- Maintain a consistent [theme](/docs/theme/base) and a components library
-- Nothing to learn [style API](/docs/style-props/usage)
-- Redefine CSS values through [converters](/docs/converters/overview)
+- Nothing to learn [inline style API](/docs/style-props/usage)
+- [Redefine](/docs/converters/overview) CSS values and
+[modify](/docs/theme/modifiers) component styles
+- Maintain a consistent component [theme](/docs/theme/base)
 
 ```jsx sandbox
 import { render } from 'react-dom'
@@ -36,5 +37,4 @@ React ecosystem is absolutely thriving. There are many great attempts at
 easily **maintainable**.
 
 The goal of <Candour /> is to enable building powerful design systems through
-total configurability. There is no API to learn - everything you already
-know about CSS is embraced through <Candour />.
+total configurability.

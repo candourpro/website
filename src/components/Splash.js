@@ -4,21 +4,17 @@ import {
   Heading,
   Text,
 } from 'candour'
-import colors from '../theme/colors'
 
 export default () => (
   <Container
-    padding={2}
-    paddingTop={5}
-    paddingBottom={6}
-    backgroundColor={colors.black}
-    color={colors.white}
+    padding
+    paddingTop='20vh'
   >
-    <Heading>
+    <Heading fontWeight600>
       Candour
     </Heading>
     <Text level={3}>
-      React design system to build faster
+      Fully configurable inline style system for React
     </Text>
   </Container>
 )

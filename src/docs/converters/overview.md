@@ -1,7 +1,7 @@
 # Overview of style value converters
 
-Style value converters are useful if you want to define app-wide colors,
-borders or any other custom style value that is likely to be reused.
+Style value converters are useful when defining colors,
+borders or any other custom style values that are going to be reused.
 
 ## Setup
 

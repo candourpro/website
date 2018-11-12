@@ -47,27 +47,6 @@ export default [
     ],
   },
   {
-    name: 'Theme',
-    slug: 'theme',
-    items: [
-      {
-        name: 'Base',
-        slug: 'theme/base',
-        component: ThemeBase,
-      },
-      {
-        name: 'Modifiers',
-        slug: 'theme/modifiers',
-        component: ThemeModifiers,
-      },
-      {
-        name: 'Levels',
-        slug: 'theme/levels',
-        component: ThemeLevels,
-      },
-    ],
-  },
-  {
     name: 'Style props',
     slug: 'style-props',
     items: [
@@ -77,14 +56,14 @@ export default [
         component: StylePropsUsage,
       },
       {
-        name: 'List',
-        slug: 'style-props/list',
-        component: StylePropsList,
-      },
-      {
         name: 'Shorthand',
         slug: 'style-props/shorthand',
         component: StylePropsShorthand,
+      },
+      {
+        name: 'List',
+        slug: 'style-props/list',
+        component: StylePropsList,
       },
       {
         name: 'Why inline styles',
@@ -131,6 +110,27 @@ export default [
         name: 'Create a new converter',
         slug: 'converters/create-new',
         component: ConvertersCreateNew,
+      },
+    ],
+  },
+  {
+    name: 'Theme',
+    slug: 'theme',
+    items: [
+      {
+        name: 'Base',
+        slug: 'theme/base',
+        component: ThemeBase,
+      },
+      {
+        name: 'Modifiers',
+        slug: 'theme/modifiers',
+        component: ThemeModifiers,
+      },
+      {
+        name: 'Levels',
+        slug: 'theme/levels',
+        component: ThemeLevels,
       },
     ],
   },
