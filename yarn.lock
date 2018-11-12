@@ -2274,10 +2274,10 @@ candour-step@^2.0.3:
   dependencies:
     candour-fluid "^1.0.12"
 
-candour@^5.3.0:
-  version "5.3.0"
-  resolved "https://registry.yarnpkg.com/candour/-/candour-5.3.0.tgz#55bc4c4c172ef95ab293ad9baef8a08366c9f07a"
-  integrity sha512-7al5LkCzigOX2uC/kZjDnU8xYKKGZayUshUCyejhAQ/PjXhBKIW8urcASKOLpbHqxaTgnNop1s+iKWSNrJFu+w==
+candour@^5.3.1:
+  version "5.3.1"
+  resolved "https://registry.yarnpkg.com/candour/-/candour-5.3.1.tgz#351e8da93ead088cdb084b779964aad87eaf5908"
+  integrity sha512-UaRXTbjPh59NAz4Iz5sl2jZDkQoByV7XnYLa/uKTjw0wlAFOX799d7j4BggrcnkQPcTWSATzhNQLJsYLlUK/1w==
   dependencies:
     camelcase-css "^2.0.1"
     css-properties "^2.0.2"
