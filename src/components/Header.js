@@ -2,6 +2,7 @@ import React from 'react'
 import {
   Container,
   Text,
+  Button,
   useBreakpoints,
 } from 'candour'
 import {
@@ -30,21 +31,19 @@ export default (props) => {
             Candour
           </Text>
         </Container>
-        {!small && <Container displayFlex>
+        {!small && <Container displayFlex alignItemsCenter>
           <Text component={Link} to='/docs/overview/introduction' marginLeft={3}>
             Docs
           </Text>
-          <Text
+          <Button
             component='a'
             href='https://github.com/candourpro/candour'
             target='_blank'
             marginLeft={3}
+            padding={0.5}
           >
             GitHub
-          </Text>
-          <Text component={Link} to='/docs/getting-started/install' marginLeft={3}>
-            Get started
-          </Text>
+          </Button>
         </Container>}
         {small && <SmallMenuIcon {...props} />}
       </Container>
