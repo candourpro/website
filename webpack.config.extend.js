@@ -24,6 +24,17 @@ module.exports = (webpackConfig, env, { paths }) => {
       ]
     })
 
+    rule.oneOf.unshift({
+      test: /.txt$/,
+      use: [
+        {
+          loader: babelLoader.loader,
+          options: babelLoader.options
+        },
+        'raw-loader'
+      ]
+    })
+
     return rule
   })
 

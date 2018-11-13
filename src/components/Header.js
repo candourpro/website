@@ -9,7 +9,7 @@ import {
 import {
   Link as RouterLink,
 } from 'react-router-dom'
-import colors from '../theme/colors'
+import CandourBlock from './CandourBlock'
 import SmallMenuIcon from './SmallMenu/Icon'
 
 export default (props) => {
@@ -27,7 +27,7 @@ export default (props) => {
         fontWeight700
       >
         <Link component={RouterLink} to='/' displayFlex alignItemsCenter>
-          <Container height width backgroundColor={colors.black} />
+          <CandourBlock />
           <Text marginLeft fontWeight700>
             Candour
           </Text>

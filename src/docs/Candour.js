@@ -2,13 +2,12 @@ import React from 'react'
 import {
   Container,
 } from 'candour'
-import colors from '../theme/colors'
+import CandourBlock from '../components/CandourBlock'
 
 export default (props) => (
   <Container displayInlineBlock marginLeft={.3} {...props}>
-    <Container
+    <CandourBlock
       displayInlineBlock
-      backgroundColor={colors.black}
       height={.7}
       width={.7}
       marginRight={.3}

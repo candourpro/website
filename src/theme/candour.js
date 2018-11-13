@@ -30,4 +30,9 @@ export default {
       },
     },
   },
+  code: {
+    base: {
+      backgroundColor: 'light-blue',
+    },
+  },
 }

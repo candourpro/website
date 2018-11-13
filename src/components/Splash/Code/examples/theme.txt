@@ -1,0 +1,26 @@
+import { render } from 'react-dom'
+import { CandourProvider, Text } from 'candour'
+import colors from 'candour-colors'
+import fluidSteps from 'candour-fluid-steps'
+
+const theme = {
+  text: {
+    base: {
+      backgroundColor: 'blue',
+      fontWeight: 700,
+      padding: 1,
+    }
+  }
+}
+
+render(
+  <CandourProvider
+    converters={[colors, fluidSteps]}
+    colors={{ blue: '#9ec0ff' }}
+    theme={theme}
+  >
+    <Text>
+      It's magic
+    </Text>
+  </CandourProvider>
+)

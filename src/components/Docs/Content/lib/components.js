@@ -8,17 +8,10 @@ import {
   Code,
   Link,
 } from 'candour'
-import Sandbox from '../Sandbox'
+import CodeWithSandbox from '../../../CodeWithSandbox'
 import borders from '../../../../theme/borders'
 
 const heading = level => props => <Heading level={level} {...props} />
-const code = ({ sandbox, ...rest }) => (
-  <Container>
-    {sandbox && <Sandbox {...rest} />}
-    <Code {...rest} />
-  </Container>
-)
-
 const inlineCode = props => (
   <Code display='inline' padding={0} paddingLeft={0.25} paddingRight={0.25} {...props} />
 )
@@ -89,7 +82,7 @@ export default {
   h5: heading(5),
   h6: heading(6),
   p,
-  code,
+  code: CodeWithSandbox,
   inlineCode,
   table,
   td,
