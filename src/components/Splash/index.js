@@ -27,7 +27,7 @@ export default (props) => {
           Fully Configurable<br/> Inline Style System<br/> for React
         </Heading>
 
-        <Container paddingBottom={2}>
+        <Container paddingBottom={3}>
           <Text level={5} paddingBottom borderBottomBlack>
             Nothing to learn inline style API
           </Text>
@@ -39,7 +39,7 @@ export default (props) => {
           </Text>
         </Container>
 
-        <Button level={4} marginTop paddingBottom={.7} component={RouterLink} to='/docs'>
+        <Button level={4} paddingBottom={.7} component={RouterLink} to='/docs'>
           Get started
         </Button>
       </Container>

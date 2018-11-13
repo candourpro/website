@@ -27,13 +27,20 @@ export default ({ sandbox, editable, children, ...rest }) => {
           scopeSelector='.token'
           rules={{
             '.attr-value': {
-              color: 'hsla(120, 1%, 40%, 1)',
+              color: 'grey',
             },
             '.attr-name': {
               fontWeight: 600,
             },
             '.string': {
-              color: 'hsla(120, 1%, 40%, 1)',
+              color: 'grey',
+            },
+            '.number': {
+              color: 'grey',
+            },
+            '.tag': {
+              fontWeight: 600,
+              color: 'dark-blue',
             },
           }}
         />

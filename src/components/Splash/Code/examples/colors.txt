@@ -7,7 +7,10 @@ render(
     converters={[colors]}
     colors={{ blue: '#9ec0ff' }}
   >
-    <Text colorBlue fontWeight={700}>
+    <Text
+      colorBlue
+      fontWeight={700}
+    >
       It's magic
     </Text>
   </CandourProvider>

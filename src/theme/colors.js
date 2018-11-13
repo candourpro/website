@@ -4,4 +4,6 @@ export default {
   white: '#fff',
   black: '#000',
   'dark-blue': 'hsla(219, 100%, 31%, 1)',
+  grey: 'hsla(120, 1%, 40%, 1)',
+  red: '#EE3831',
 }

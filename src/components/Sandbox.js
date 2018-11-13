@@ -27,7 +27,7 @@ const Fallback = ({ error }) => (
 )
 
 export default props => (
-  <Container borderLight padding>
+  <Container borderLight padding whiteSpaceNormal>
     <CandourProvider>
       <ErrorBoundary FallbackComponent={Fallback} key={props.children}>
         <CodeSandbox
