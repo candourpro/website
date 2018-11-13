@@ -18,6 +18,7 @@
     "css-properties": "^2.0.2",
     "libreact": "^2.6.0",
     "mdx": "^0.3.1",
+    "prismjs": "^1.15.0",
     "react": "16.7.0-alpha.0",
     "react-code-sandbox": "^1.0.0",
     "react-dom": "16.7.0-alpha.0",
