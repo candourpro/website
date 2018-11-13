@@ -8,12 +8,11 @@ import examples from './examples/index'
 import Link from './Link'
 
 export default ({
-  match: {
-    params: {
+  location: {
+    state: {
       exampleId = 'styleProps',
-    },
+    } = {},
   },
-  match,
 }) => (
   <Container paddingTop={2} maxWidth={36} overflowYAuto paddingBottom={4}>
     <CodeWithSandbox editable sandbox key={exampleId}>

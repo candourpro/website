@@ -11,7 +11,7 @@ export default ({ example, exampleId, ...rest }) => (
     fontWeight700
     component={RouterLink}
     marginRight
-    to={`/examples/${example}`}
+    to={{ state: { exampleId: example } }}
     {...rest}
   />
 )

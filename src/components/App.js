@@ -21,7 +21,6 @@ export default () => (
         <Route component={SmallMenuContent} />
         <Switch>
           <Route exact path='/' component={Landing} />
-          <Route exact path='/examples/:exampleId' component={Landing} />
           <Route exact path='/docs/*' component={Docs} />
           <Redirect exact from='/docs' to='/docs/overview' />
         </Switch>
