@@ -24,7 +24,7 @@ export default (props) => {
           Candour
         </Heading>
         <Heading level={2} paddingBottom={2} fontWeight700 lineHeight={1.25}>
-          Fully Configurable<br/> Inline Style System<br/> for React
+          Fully Configurable<br/> Styles for React
         </Heading>
 
         <Container paddingBottom={3}>
@@ -32,15 +32,15 @@ export default (props) => {
             Nothing to learn inline style API
           </Text>
           <Text level={5} paddingBottom paddingTop borderBottomBlack>
-            Redefine CSS values and modify component styles
+            Redefine CSS values and create style modifiers
           </Text>
           <Text level={5} paddingTop>
             Maintain a consistent component theme
           </Text>
         </Container>
 
-        <Button level={4} paddingBottom={.7} component={RouterLink} to='/docs'>
-          Get started
+        <Button fontWeight700 level={4} paddingBottom={.7} component={RouterLink} to='/docs'>
+          Learn more
         </Button>
       </Container>
 

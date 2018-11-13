@@ -31,6 +31,9 @@ export default ({
       <Link example='theme' exampleId={exampleId}>
         Theme
       </Link>
+      <Link example='modifiers' exampleId={exampleId}>
+        Modifiers
+      </Link>
     </Container>
   </Container>
 )
