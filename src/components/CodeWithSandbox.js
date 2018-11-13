@@ -14,7 +14,7 @@ import 'prismjs/components/prism-jsx'
 import Sandbox from './Sandbox'
 
 export default ({ sandbox, editable, children, ...rest }) => {
-  const editorContainerStyle = useConvert({ minWidth: 35 })
+  const editorContainerStyle = useConvert({ minWidth: '100%' })
   const [code, setCode] = useState(children)
 
   return (

@@ -13,7 +13,7 @@ export default ({
     } = {},
   },
 }) => (
-  <Container paddingTop={2} maxWidth={36} overflowYAuto paddingBottom={4}>
+  <Container paddingTop={2} maxWidth={36} width='100%' overflowYAuto paddingBottom={4}>
     <CodeWithSandbox editable sandbox key={exampleId}>
       {examples[exampleId]}
     </CodeWithSandbox>
