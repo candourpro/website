@@ -3,7 +3,6 @@ import {
   Container,
   Text,
   Link,
-  Button,
   useBreakpoints,
 } from 'candour'
 import {
@@ -36,18 +35,23 @@ export default (props) => {
           <Link
             component={RouterLink}
             to='/docs/overview'
+            textTransformUppercase
+            level={8}
             marginLeft={3}
+            color='hsla(0, 0%, 40%, 1)'
           >
             Docs
           </Link>
-          <Button
-            component='a'
+          <Link
             href='https://github.com/candourpro/candour'
             target='_blank'
             marginLeft={3}
+            level={8}
+            textTransformUppercase
+            color='hsla(0, 0%, 40%, 1)'
           >
             GitHub
-          </Button>
+          </Link>
         </Container>}
         {small && <SmallMenuIcon {...props} />}
       </Container>

@@ -25,10 +25,9 @@ export default ({
       level={level}
       component={RouterLink}
       to={to(slug, items)}
-      colorBlue={params[0] === slug}
+      fontWeight700={params[0] === slug}
       displayBlock
       marginBottom
-      fontWeight700
     >
       {name}
     </Link>

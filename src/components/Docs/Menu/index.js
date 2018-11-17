@@ -12,7 +12,6 @@ export default (props) => (
       href='https://github.com/candourpro/candour'
       target='_blank'
       level={props.level}
-      fontWeight700
     >
       GitHub
     </Link>

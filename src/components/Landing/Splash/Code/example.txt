@@ -1,0 +1,7 @@
+<Text
+  backgroundColorAqua
+  padding
+  fontWeight700
+>
+  It's magic
+</Text>

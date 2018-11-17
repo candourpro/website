@@ -21,13 +21,13 @@ import fontFamilies from 'candour-font-families'
 import custom from 'candour-custom'
 
 const Fallback = ({ error }) => (
-  <Container colorRed padding={2}>
+  <Container colorRed padding={2} whiteSpacePreWrap fontFamilyMonospace>
     {error.toString()}
   </Container>
 )
 
 export default props => (
-  <Container borderLight padding whiteSpaceNormal>
+  <Container padding whiteSpaceNormal>
     <CandourProvider>
       <ErrorBoundary FallbackComponent={Fallback} key={props.children}>
         <CodeSandbox

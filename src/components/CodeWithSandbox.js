@@ -13,16 +13,16 @@ import 'prismjs/components/prism-markup'
 import 'prismjs/components/prism-jsx'
 import Sandbox from './Sandbox'
 
-export default ({ sandbox, editable, children, ...rest }) => {
+export default ({ sandbox, editable, wrapper, children, ...rest }) => {
   const editorContainerStyle = useConvert({ minWidth: '100%' })
   const [code, setCode] = useState(children)
 
   return (
     <Container>
-      {sandbox && <Sandbox {...rest}>
-        {code}
+      {sandbox && <Sandbox>
+        {wrapper ? wrapper(code) : code}
       </Sandbox>}
-      <Code padding paddingBottom={0}>
+      <Code padding paddingBottom={0} {...rest}>
         <Style
           scopeSelector='.token'
           rules={{
@@ -40,7 +40,6 @@ export default ({ sandbox, editable, children, ...rest }) => {
             },
             '.tag': {
               fontWeight: 600,
-              color: 'dark-blue',
             },
           }}
         />

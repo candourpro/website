@@ -1,12 +1,15 @@
 import { render } from 'react-dom'
-import { CandourProvider, Text } from 'candour'
+import {
+  CandourProvider,
+  Text,
+} from 'candour'
 import colors from 'candour-colors'
 import fluidSteps from 'candour-fluid-steps'
 
 const theme = {
   text: {
     base: {
-      backgroundColor: 'blue',
+      backgroundColor: 'primary',
       fontWeight: 700,
       padding: 1,
     }
@@ -16,7 +19,7 @@ const theme = {
 render(
   <CandourProvider
     converters={[colors, fluidSteps]}
-    colors={{ blue: '#9ec0ff' }}
+    colors={{ primary: '#66fcd9' }}
     theme={theme}
   >
     <Text>

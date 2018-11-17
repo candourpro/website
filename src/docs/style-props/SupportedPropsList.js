@@ -22,7 +22,7 @@ export default (props) => (
         </Code>
 
         <Container>
-          {on || <Button onClick={toggle} marginTop>Show all ({cssProperties.length})</Button>}
+          {on || <Button level={8} onClick={toggle}>Show all ({cssProperties.length})</Button>}
         </Container>
       </Container>
     )}

@@ -21,7 +21,7 @@ export default (props) => {
   const { small } = useBreakpoints()
 
   return (
-    <Container padding paddingLeft={small ? 1 : 2} paddingRight={small ? 1 : 2} width='100%'>
+    <Container padding paddingLeft={small ? 1 : 2} paddingRight={small ? 1 : 2} paddingBottom={6} width='100%'>
       <Text readable>
         <CandourProvider
           theme={candourMdxTheme}

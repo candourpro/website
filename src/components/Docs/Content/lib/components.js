@@ -72,7 +72,7 @@ const li = props => (
 )
 
 const p = props => <Text marginBottom {...props} />
-const blockquote = props => <Container paddingLeft borderLeft={borders.black} borderWidth={.5} {...props} />
+const blockquote = props => <Container paddingLeft borderLeftAqua borderWidth={.5} {...props} />
 
 export default {
   h1: heading(1),

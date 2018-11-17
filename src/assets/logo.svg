@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="830px" height="1030px" viewBox="0 0 830 1030" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
-    <title>Group 7</title>
+<svg width="301px" height="301px" viewBox="0 0 301 301" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
     <desc>Created with Sketch.</desc>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Group-7" transform="translate(515.000000, 515.500000) scale(-1, 1) translate(-515.000000, -515.500000) translate(15.000000, 15.000000)">
-            <path d="M500,801 C665.685425,801 800,666.685425 800,501 C800,335.314575 665.685425,201 500,201 L500,1.13686838e-13 C776.142375,0 1000,223.857625 1000,500 C1000,776.142375 776.142375,1000 500,1000 L500,801 Z" id="Combined-Shape" stroke="#FFFFFF" stroke-width="30" fill="#0D51FF"></path>
-            <path d="M0,1 C276.142375,1 500,224.857625 500,501 C500,777.142375 276.142375,1001 0,1001 L0,1 Z" id="Combined-Shape" transform="translate(250.000000, 501.000000) scale(-1, 1) translate(-250.000000, -501.000000) "></path>
-            <path d="M200,200 C365.685425,200 500,334.314575 500,500 C500,665.685425 365.685425,800 200,800 L200,200 Z" id="Combined-Shape" stroke="#FFFFFF" stroke-width="30" fill="#0D51FF" transform="translate(350.000000, 500.000000) scale(-1, 1) translate(-350.000000, -500.000000) "></path>
+    <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group">
+            <path d="M298.197485,281.467015 L19,2.26952944 C22.532759,0.807050995 26.4056384,7.46062711e-16 30.4670146,0 L270.467015,0 C287.035557,-3.04359188e-15 300.467015,13.4314575 300.467015,30 L300.467015,270 C300.467015,274.061376 299.659964,277.934256 298.197485,281.467015 Z" id="Combined-Shape" fill="#C0FFFF"></path>
+            <path d="M279.197485,300.467015 L3.37507799e-14,21.2695294 C3.53275898,19.807051 7.40563835,19 11.4670146,19 L251.467015,19 C268.035557,19 281.467015,32.4314575 281.467015,49 L281.467015,289 C281.467015,293.061376 280.659964,296.934256 279.197485,300.467015 Z" id="Combined-Shape" fill="#60ECCB" transform="translate(140.733507, 159.733507) scale(-1, -1) translate(-140.733507, -159.733507) "></path>
         </g>
     </g>
 </svg>

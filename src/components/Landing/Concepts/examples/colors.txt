@@ -1,15 +1,18 @@
 import { render } from 'react-dom'
-import { CandourProvider, Text } from 'candour'
+import {
+  CandourProvider,
+  Text,
+} from 'candour'
 import colors from 'candour-colors'
 
 render(
   <CandourProvider
     converters={[colors]}
-    colors={{ blue: '#9ec0ff' }}
+    colors={{ primary: '#66fcd9' }}
   >
     <Text
-      colorBlue
-      fontWeight={700}
+      colorPrimary
+      fontWeight700
     >
       It's magic
     </Text>

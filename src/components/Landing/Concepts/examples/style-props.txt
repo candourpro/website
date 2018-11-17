@@ -1,0 +1,6 @@
+<Text
+  fontWeight={700}
+  textAlignCenter
+>
+  It's magic
+</Text>
