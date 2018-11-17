@@ -19,22 +19,24 @@ export default () => (
         Showcase
       </Heading>
 
-      <Container paddingTop={3} paddingBottom={3} displayFlex justifyContentSpaceBetween flexWrapWrap>
-        <Item marginTop src='/users/domasbitvinskas.jpg' href='https://domasbitvinskas.com' />
-        <Item marginTop src='/users/kurkim.jpg' href='https://kurkim.lt' />
+      <Container paddingTop={3} paddingBottom={3} displayFlex flexWrapWrap>
+        <Item marginTop marginRight src='/users/domasbitvinskas.jpg' href='https://domasbitvinskas.com' />
+        <Item marginTop marginRight src='/users/kurkim.jpg' href='https://kurkim.lt' />
         <Item marginTop src='/users/bloometry.jpg' href='https://bloometry.com' />
       </Container>
 
-      <Button
-        component={RouterLink}
-        to='/docs'
-        level={8}
-        paddingLeft={2}
-        paddingRight={2}
-        textTransformUppercase
-      >
-        Get started with Candour
-      </Button>
+      <Container displayFlex justifyContentCenter>
+        <Button
+          component={RouterLink}
+          to='/docs'
+          level={8}
+          paddingLeft={2}
+          paddingRight={2}
+          textTransformUppercase
+        >
+          Get started with Candour
+        </Button>
+      </Container>
     </Container>
   </Container>
 )

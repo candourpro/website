@@ -16,7 +16,7 @@ render(
       fontWeight={700}
       padding={1}
     >
-      It's magic
+      Sizes
     </Text>
   </CandourProvider>
 )

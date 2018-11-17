@@ -14,7 +14,7 @@ render(
       colorPrimary
       fontWeight700
     >
-      It's magic
+      Colors
     </Text>
   </CandourProvider>
 )

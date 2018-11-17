@@ -16,7 +16,7 @@ export default (props) => {
   return (
     <Container
       padding
-      paddingTop={5}
+      paddingTop={small ? 1 : 5}
       paddingBottom={3}
       displayFlex={!small}
       justifyContentSpaceBetween
@@ -53,7 +53,7 @@ export default (props) => {
         </Button>
 
         <Container
-          displayFlex
+          displayFlex={!small}
           paddingBottom={3}
           paddingTop={3}
         >
