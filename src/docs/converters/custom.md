@@ -15,8 +15,7 @@ import custom from 'candour-custom'
 
 render(
   <CandourProvider
-    converters={[custom]}
-    custom={{ 'extra-bold': 900 }}
+    converters={[custom({ 'extra-bold': 900 })]}
   >
     <Heading fontWeightExtraBold>
       Extra bold font
@@ -27,6 +26,4 @@ render(
 
 ## Supported props
 
-```
-fontFamily
-```
+All style props are supported.

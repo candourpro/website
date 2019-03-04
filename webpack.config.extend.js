@@ -1,3 +1,5 @@
+const path = require('path')
+
 module.exports = (webpackConfig, env, { paths }) => {
   const babelLoaderFilter = rule => rule.loader && rule.loader.includes("babel") && rule.options && rule.options.plugins
   let loaders = webpackConfig.module.rules.find(rule => Array.isArray(rule.oneOf)).oneOf
@@ -37,6 +39,13 @@ module.exports = (webpackConfig, env, { paths }) => {
 
     return rule
   })
+
+  webpackConfig.resolve = {
+    alias: {
+      // alias React for npm link to use a hoisted package
+      react: path.resolve(path.join(__dirname, './node_modules/react')),
+    },
+  }
 
   return webpackConfig
 }

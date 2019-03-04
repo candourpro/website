@@ -18,8 +18,7 @@ const theme = {
 
 render(
   <CandourProvider
-    converters={[colors, fluidSteps]}
-    colors={{ primary: '#66fcd9' }}
+    converters={[colors({ primary: '#66fcd9' }), fluidSteps()]}
     theme={theme}
   >
     <Text>

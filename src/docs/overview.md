@@ -19,8 +19,7 @@ import colors from 'candour-colors'
 
 render(
   <CandourProvider
-    converters={[fluidSteps, colors]}
-    colors={{ aqua: '#66fcd9' }}
+    converters={[fluidSteps(), colors({ aqua: '#66fcd9' })]}
   >
     <Container backgroundColor='aqua' fontWeight700 padding={2}>
       Candour

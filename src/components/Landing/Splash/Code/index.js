@@ -9,8 +9,7 @@ import example from './example.txt'
 const wrapper = (code) => `
   render(
     <CandourProvider
-      converters={[fluidSteps, colors]}
-      colors={{ aqua: '#66FCD9' }}
+      converters={[fluidSteps(), colors({ aqua: '#66FCD9' })]}
     >
       ${code}
     </CandourProvider>

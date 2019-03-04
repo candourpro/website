@@ -16,8 +16,7 @@ import colors from 'candour-colors'
 
 render(
   <CandourProvider
-    converters={[fluidSteps, colors]}
-    colors={{ raddish: '#D41E5C' }}
+    converters={[fluidSteps(), colors({ raddish: '#D41E5C' })]}
   >
     <Text fontSize={2}>
       Size style values will be converted with fluid steps converter

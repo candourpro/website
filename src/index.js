@@ -7,15 +7,11 @@ import App from './components/App'
 import registerServiceWorker from './registerServiceWorker'
 import candourTheme from './theme/candour'
 import candourConverters from './theme/candourConverters'
-import colors from './theme/colors'
-import borders from './theme/borders'
 
 ReactDOM.render(
   <CandourProvider
     theme={candourTheme}
     converters={candourConverters}
-    colors={colors}
-    borders={borders}
     breakpoints={{ small: '700px' }}
   >
     <CandourNormalize />

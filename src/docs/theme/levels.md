@@ -26,7 +26,7 @@ const candourTheme = {
 }
 
 render(
-  <CandourProvider theme={candourTheme} converters={[fluidSteps]}>
+  <CandourProvider theme={candourTheme} converters={[fluidSteps()]}>
     <Heading>
       Themed heading
     </Heading>

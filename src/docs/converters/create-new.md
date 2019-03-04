@@ -15,8 +15,7 @@ import colors from 'candour-colors'
 
 render(
   <CandourProvider
-    converters={[fluidSteps, colors]}
-    colors={{ raddish: '#D41E5C' }}
+    converters={[fluidSteps(), colors({ raddish: '#D41E5C' })]}
   >
     Your app here
 
@@ -38,19 +37,19 @@ This is the gist of the `colors` converter:
 ```
 import _ from 'lodash'
 
-export default {
-  match: ({ colors }, value, key) => (
+export default (colors) => ({
+  match: (theme, value, key) => (
     colors && value && key.match(/color/i) && _.has(colors, value)
   ),
-  value: ({ colors }, value) => colors[value],
-}
+  value: (theme, value) => colors[value],
+})
 ```
 
 The arguments that are passed to `match` and `value` functions:
 
 | Argument                     | Description
 | ---                          | ---
-| All `CandourProvider` props  | This usually includes `theme` and converter configs (`colors`, etc.)
+| All `CandourProvider` props  | This usually includes `theme` and other props passed to `CandourProvider`
 | `value`                      | The value of the style prop as it's passed initially (`raddish`, `1`, etc.)
 | `key`                        | The key of the style prop (`border`, `color`, etc.)
 

@@ -18,8 +18,7 @@ const theme = {
 
 render(
   <CandourProvider
-    converters={[colors, fluidSteps]}
-    colors={{ blue: '#9ec0ff' }}
+    converters={[colors({ blue: '#9ec0ff' }), fluidSteps()]}
     theme={theme}
   >
     <Text underline>

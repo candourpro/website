@@ -13,8 +13,7 @@ import fontFamilies from 'candour-font-families'
 
 render(
   <CandourProvider
-    converters={[fontFamilies]}
-    fontFamilies={{ mono: 'monospace' }}
+    converters={[fontFamilies({ mono: 'monospace' })]}
   >
     <Heading fontFamilyMono>
       Monospace font

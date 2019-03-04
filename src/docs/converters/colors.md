@@ -14,8 +14,7 @@ import colors from 'candour-colors'
 
 render(
   <CandourProvider
-    converters={[colors]}
-    colors={{ raddish: '#D41E5C', red: '#F5BCCF' }}
+    converters={[colors({ raddish: '#D41E5C', red: '#F5BCCF' })]}
   >
     <Heading colorRaddish backgroundColor='red'>
       Raddish color

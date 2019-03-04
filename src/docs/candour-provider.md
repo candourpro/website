@@ -19,7 +19,7 @@ const theme = {
 }
 
 render(
-  <CandourProvider theme={theme} converters={[fluidSteps]}>
+  <CandourProvider theme={theme} converters={[fluidSteps()]}>
     Your app here
 
     <Text fontSize={2}>

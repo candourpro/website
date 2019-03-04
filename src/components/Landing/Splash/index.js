@@ -30,14 +30,12 @@ export default (props) => {
           fontWeight700
           paddingBottom={2}
         >
-          React Design System<br/> For Maximal Productivity
+          Next-gen React<br/>Design Abstraction Layer
         </Heading>
 
         <Text paddingBottom={2.6} level={4} colorLightBlack>
           <Text fontWeight500 level={4} displayInline>Candour</Text> is
-          open-source, completely configurable React design system for
-          for <Text fontWeight500 level={4} displayInline>more
-            results with less developer effort</Text>.
+            an abstraction layer to build context-aware designs systems.
         </Text>
 
         <Button

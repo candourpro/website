@@ -15,7 +15,7 @@ import fluidSteps from 'candour-fluid-steps'
 
 render(
   <CandourProvider
-    converters={[fluidSteps]}
+    converters={[fluidSteps()]}
   >
     <Heading fontSize={5}>
       FLUID
@@ -62,7 +62,7 @@ import { CandourProvider, Heading } from 'candour'
 import fluidSteps from 'candour-fluid-steps'
 
 render(
-  <CandourProvider converters={[fluidSteps]}>
+  <CandourProvider converters={[fluidSteps()]}>
     <Heading fontSize={1}>
       Heading with font size
     </Heading>
@@ -81,8 +81,7 @@ import fluidSteps from 'candour-fluid-steps'
 
 render(
   <CandourProvider
-    converters={[fluidSteps]}
-    fluidSteps={{ min: 5, max: 30 }}
+    converters={[fluidSteps({ min: 5, max: 30 })]}
   >
     <Heading fontSize={1}>
       Heading with font size

@@ -7,8 +7,7 @@ import colors from 'candour-colors'
 
 render(
   <CandourProvider
-    converters={[colors]}
-    colors={{ primary: '#66fcd9' }}
+    converters={[colors({ primary: '#66fcd9' })]}
   >
     <Text
       colorPrimary

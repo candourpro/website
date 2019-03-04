@@ -8,8 +8,6 @@ import {
 
 import candourMdxTheme from '../../../theme/candourMdx'
 import candourConverters from '../../../theme/candourConverters'
-import colors from '../../../theme/colors'
-import borders from '../../../theme/borders'
 import Pagination from './Pagination/index'
 import GitHubMeta from './GitHubMeta/index'
 
@@ -26,8 +24,6 @@ export default (props) => {
         <CandourProvider
           theme={candourMdxTheme}
           converters={candourConverters}
-          colors={colors}
-          borders={borders}
         >
           <CurrentComponent components={components} />
         </CandourProvider>

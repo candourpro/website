@@ -13,8 +13,7 @@ import borders from 'candour-borders'
 
 render(
   <CandourProvider
-    converters={[borders]}
-    borders={{ dark: '5px solid #000' }}
+    converters={[borders({ dark: '5px solid #000' })]}
   >
     <Heading borderBottomDark>
       With dark border
