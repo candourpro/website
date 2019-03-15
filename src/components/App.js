@@ -8,6 +8,7 @@ import {
 } from 'react-router-dom'
 import { ScrollContext } from 'react-router-scroll-4'
 
+import Meta from './Meta'
 import Landing from './Landing/index'
 import Header from './Header'
 import Footer from './Footer'
@@ -25,6 +26,7 @@ const shouldUpdateScroll = (
 
 export default () => (
   <Container>
+    <Meta />
     <Router>
       <ScrollContext shouldUpdateScroll={shouldUpdateScroll}>
         <div>
