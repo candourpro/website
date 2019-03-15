@@ -19,9 +19,10 @@ export default () => (
         Showcase
       </Heading>
 
-      <Container paddingTop={3} paddingBottom={3} displayFlex flexWrapWrap>
+      <Container paddingTop={3} paddingBottom={3} displayFlex flexWrapWrap justifyContentCenter>
         <Item marginTop marginRight src='/users/domasbitvinskas.jpg' href='https://domasbitvinskas.com' />
         <Item marginTop marginRight src='/users/kurkim.jpg' href='https://kurkim.lt' />
+        <Item marginTop marginRight src='/users/vaidalekaviciute.jpg' href='https://vaidalekaviciute.com' />
         <Item marginTop src='/users/bloometry.jpg' href='https://bloometry.com' />
       </Container>
 
